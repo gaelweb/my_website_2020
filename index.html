@@ -57,9 +57,90 @@
         <div
           class="d-flex flex-column justify-content-center align-items-center h-100"
         >
-          <h1>Gael Monbrault</h1>
+          <h1 class="header-section__main-title">Gael Monbrault</h1>
           <h2>Web developer</h2>
           <h2>Freelance</h2>
+        </div>
+      </div>
+    </section>
+    <!-- About -->
+    <section class="about-section">
+      <div class="container">
+        <h2>A propos</h2>
+        <div class="row">
+          <div class="col-lg-6">
+            <div class="about-section__profil">
+              <img src="" alt="photo_gael_monbrault" />
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis
+                quas sed aspernatur blanditiis quae. Vero soluta similique optio
+                culpa nostrum eos, rem dolorum esse pariatur veniam facere
+                exercitationem! Laudantium, non?
+              </p>
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <div class="about-section__skills">
+              <h4>Compétences</h4>
+              <div class="about-section__skills-content">
+                <span>Python</span>
+                <div class="progress" style="height: 2px;">
+                  <div
+                    class="progress-bar"
+                    role="progressbar"
+                    style="width: 25%;"
+                    aria-valuenow="25"
+                    aria-valuemin="0"
+                    aria-valuemax="100"
+                  ></div>
+                </div>
+                <span>HTML5 / CSS3</span>
+                <div class="progress" style="height: 2px;">
+                  <div
+                    class="progress-bar"
+                    role="progressbar"
+                    style="width: 25%;"
+                    aria-valuenow="25"
+                    aria-valuemin="0"
+                    aria-valuemax="100"
+                  ></div>
+                </div>
+                <span>Bootstrap 4</span>
+                <div class="progress" style="height: 2px;">
+                  <div
+                    class="progress-bar"
+                    role="progressbar"
+                    style="width: 25%;"
+                    aria-valuenow="25"
+                    aria-valuemin="0"
+                    aria-valuemax="100"
+                  ></div>
+                </div>
+                <span>Vue JS</span>
+                <div class="progress" style="height: 2px;">
+                  <div
+                    class="progress-bar"
+                    role="progressbar"
+                    style="width: 25%;"
+                    aria-valuenow="25"
+                    aria-valuemin="0"
+                    aria-valuemax="100"
+                  ></div>
+                </div>
+                <span>Affinity designer</span>
+                <div class="progress" style="height: 2px;">
+                  <div
+                    class="progress-bar"
+                    role="progressbar"
+                    style="width: 25%;"
+                    aria-valuenow="25"
+                    aria-valuemin="0"
+                    aria-valuemax="100"
+                  ></div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </section>
@@ -79,4 +160,13 @@
     integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
     crossorigin="anonymous"
   ></script>
+  <script src="https://unpkg.com/scrollreveal"></script>
+  <script>
+    window.sr = ScrollReveal();
+    sr.reveal(".header-section__main-title", {
+      duration: 2500,
+      origin: "left",
+      distance: "4rem"
+    });
+  </script>
 </html>
