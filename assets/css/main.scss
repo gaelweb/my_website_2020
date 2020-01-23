@@ -22,6 +22,11 @@ $violet: #3F005B;
 $pink: #8B2367;
 $grey: #8A8A8A;
 
+/* Custom styling */
+$border: 1px solid;
+$borderRadius: 3px;
+$borderPink: 1px solid $pink;
+$paddingTitle: 0.5rem;
 
 html,
 body {
@@ -33,12 +38,12 @@ html * {
     font-family: "Roboto", "sans-sérif";
 }
 
-/* Navbar */
+/* NAVBAR */
 .nav-logo {
     font-family: "Road Rage";
 }
 
-/* Header */
+/* HEADER */
 .header-section {
     height: 100vh;
     width: 100%;
@@ -97,6 +102,73 @@ html * {
     }
 }
 
+/* ABOUT */
+.about-section {
+    &__profil {
+        max-width: 90%;
+
+        img {
+            margin: auto;
+        }
+
+        p {
+            font-weight: lighter;
+            padding-top: 2rem;
+            font-size: 1.25rem;
+            color: $grey;
+        }
+    }
+
+    &__skills {
+        width: 90%;
+        float: right;
+        border: $borderPink;
+        border-radius: $borderRadius;
+        padding: 3.5rem;
+
+        h4 {
+            font-family: "Road Rage";
+            color: $pink;
+            padding-bottom: 2rem;
+        }
+    }
+
+    &__skills-content {
+        margin-top: 2rem;
+
+        .skills {
+            margin-top: 2rem;
+
+            span {
+                font-size: 1rem;
+                font-style: italic;
+            }
+
+            .progress {
+                height: 0.25rem;
+
+                .progress-bar {
+                    background-color: $pink;
+                }
+            }
+        }
+    }
+
+    &__title-block {
+        padding-top: 5rem;
+        padding-bottom: 5rem;
+
+        h2 {
+            font-family: "Road Rage";
+            font-size: 2.5rem;
+            color: $violet;
+            border-top: $border $violet;
+            border-bottom: $border $violet;
+            padding-top: $paddingTitle;
+            padding-bottom: $paddingTitle;
+        }
+    }
+}
 
 /* Breakpoints 
     576px, 
@@ -110,7 +182,7 @@ html * {
     .header-section {
         &__main {
             h1 {
-                font-size: 2rem;
+                font-size: 2.1rem;
             }
 
             h2 {
@@ -130,6 +202,21 @@ html * {
             h2 {
                 font-size: 2rem;
             }
+        }
+    }
+}
+
+@media screen and (max-width:768px) {
+    .about-section {
+        &__skills {
+            padding-left: 0;
+            padding-right: 0;
+            border: none;
+            float: none;
+        }
+
+        &__profil {
+            max-width: 100%;
         }
     }
 }

@@ -16,6 +16,7 @@
   src: url("../fonts/Roboto-Thin.ttf") format("ttf");
 }
 /* Custom colors */
+/* Custom styling */
 html,
 body {
   margin: 0;
@@ -26,12 +27,12 @@ html * {
   font-family: "Roboto", "sans-sérif";
 }
 
-/* Navbar */
+/* NAVBAR */
 .nav-logo {
   font-family: "Road Rage";
 }
 
-/* Header */
+/* HEADER */
 .header-section {
   height: 100vh;
   width: 100%;
@@ -82,6 +83,61 @@ html * {
   font-size: 2.5rem;
 }
 
+/* ABOUT */
+.about-section__profil {
+  max-width: 90%;
+}
+.about-section__profil img {
+  margin: auto;
+}
+.about-section__profil p {
+  font-weight: lighter;
+  padding-top: 2rem;
+  font-size: 1.25rem;
+  color: #8A8A8A;
+}
+.about-section__skills {
+  width: 90%;
+  float: right;
+  border: 1px solid #8B2367;
+  border-radius: 3px;
+  padding: 3.5rem;
+}
+.about-section__skills h4 {
+  font-family: "Road Rage";
+  color: #8B2367;
+  padding-bottom: 2rem;
+}
+.about-section__skills-content {
+  margin-top: 2rem;
+}
+.about-section__skills-content .skills {
+  margin-top: 2rem;
+}
+.about-section__skills-content .skills span {
+  font-size: 1rem;
+  font-style: italic;
+}
+.about-section__skills-content .skills .progress {
+  height: 0.25rem;
+}
+.about-section__skills-content .skills .progress .progress-bar {
+  background-color: #8B2367;
+}
+.about-section__title-block {
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+}
+.about-section__title-block h2 {
+  font-family: "Road Rage";
+  font-size: 2.5rem;
+  color: #3F005B;
+  border-top: 1px solid #3F005B;
+  border-bottom: 1px solid #3F005B;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+}
+
 /* Breakpoints 
     576px, 
     768px, 
@@ -91,7 +147,7 @@ html * {
 /* Responsive */
 @media screen and (max-width: 576px) {
   .header-section__main h1 {
-    font-size: 2rem;
+    font-size: 2.1rem;
   }
   .header-section__main h2 {
     font-size: 1.6rem;
@@ -103,6 +159,17 @@ html * {
   }
   .header-section__main h2 {
     font-size: 2rem;
+  }
+}
+@media screen and (max-width: 768px) {
+  .about-section__skills {
+    padding-left: 0;
+    padding-right: 0;
+    border: none;
+    float: none;
+  }
+  .about-section__profil {
+    max-width: 100%;
   }
 }
 
