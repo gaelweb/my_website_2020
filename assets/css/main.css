@@ -255,7 +255,8 @@ html * {
 /* CONTACT */
 .contact-section {
   width: 100%;
-  background-color: #3f005b;
+  background-color: rgba(63, 0, 91, 0.92);
+  color: #fff;
 }
 .contact-section__title-block {
   padding-top: 5rem;
@@ -269,6 +270,53 @@ html * {
   border-bottom: 1px solid #fff;
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
+}
+.contact-section__row {
+  padding: 3rem;
+  background-color: #3f005b;
+  border-radius: 3px;
+}
+.contact-section__row .form-group {
+  padding-bottom: 1.25rem;
+}
+.contact-section__infos div:nth-child(1n) {
+  margin-bottom: 2rem;
+}
+.contact-section__infos svg {
+  height: 1rem;
+  width: 1rem;
+  fill: #fff;
+}
+.contact-section__infos span {
+  padding-left: 1rem;
+}
+.contact-section__infos :nth-child(2)::before {
+  content: "@";
+}
+.contact-section .btn-contact {
+  background-color: #8b2367;
+  color: #fff;
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+.contact-section .btn-contact:hover {
+  color: #fff;
+  background-color: rgba(139, 35, 103, 0.62);
+}
+
+/* FOOTER */
+footer {
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+  background-color: rgba(63, 0, 91, 0.92);
+  color: #fff;
+}
+footer span {
+  font-weight: lighter;
+  font-size: 0.9rem;
+}
+footer span::before {
+  content: "©";
 }
 
 /* RESPONSIVE */
@@ -288,6 +336,11 @@ html * {
 
   .service-section__name {
     margin-bottom: 5rem;
+  }
+
+  .contact-section__row {
+    padding-left: 0;
+    padding-right: 0;
   }
 }
 @media screen and (min-width: 576px) and (max-width: 768px) {
@@ -324,6 +377,11 @@ html * {
     border: none;
     padding-left: 0;
     padding-right: 0;
+  }
+}
+@media screen and (max-width: 767px) {
+  .contact-section__row div:nth-child(1) {
+    padding-top: 2rem;
   }
 }
 
