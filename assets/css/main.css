@@ -21,6 +21,7 @@ html,
 body {
   margin: 0;
   padding: 0;
+  scroll-behavior: smooth;
 }
 
 html * {
@@ -61,7 +62,7 @@ html * {
   left: 0;
   bottom: 0;
   width: 100%;
-  background: #3F005B;
+  background: #3f005b;
   opacity: 0.16;
   z-index: -1;
 }
@@ -94,18 +95,18 @@ html * {
   font-weight: lighter;
   padding-top: 2rem;
   font-size: 1.25rem;
-  color: #8A8A8A;
+  color: #8a8a8a;
 }
 .about-section__skills {
   width: 90%;
   float: right;
-  border: 1px solid #8B2367;
+  border: 1px solid #8b2367;
   border-radius: 3px;
   padding: 3.5rem;
 }
 .about-section__skills h4 {
   font-family: "Road Rage";
-  color: #8B2367;
+  color: #8b2367;
   padding-bottom: 2rem;
 }
 .about-section__skills-content {
@@ -122,7 +123,7 @@ html * {
   height: 0.25rem;
 }
 .about-section__skills-content .skills .progress .progress-bar {
-  background-color: #8B2367;
+  background-color: #8b2367;
 }
 .about-section__title-block {
   padding-top: 5rem;
@@ -131,20 +132,76 @@ html * {
 .about-section__title-block h2 {
   font-family: "Road Rage";
   font-size: 2.5rem;
-  color: #3F005B;
-  border-top: 1px solid #3F005B;
-  border-bottom: 1px solid #3F005B;
+  color: #3f005b;
+  border-top: 1px solid #3f005b;
+  border-bottom: 1px solid #3f005b;
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
 }
 
+/* PROJECTS */
+.project-section {
+  background-color: #3f005b;
+  width: 100%;
+}
+.project-section__title-block {
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+}
+.project-section__title-block h2 {
+  color: #fff;
+  font-family: "Road Rage";
+  font-size: 2.5rem;
+  border-top: 1px solid #fff;
+  border-bottom: 1px solid #fff;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+}
+
+/* SERVICES */
+.service-section {
+  width: 100%;
+}
+.service-section__title-block {
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+}
+.service-section__title-block h2 {
+  font-family: "Road Rage";
+  font-size: 2.5rem;
+  color: #3f005b;
+  border-top: 1px solid #3f005b;
+  border-bottom: 1px solid #3f005b;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+}
+
+/* CONTACT */
+.contact-section {
+  width: 100%;
+  background-color: #3f005b;
+}
+.contact-section__title-block {
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+}
+.contact-section__title-block h2 {
+  color: #fff;
+  font-family: "Road Rage";
+  font-size: 2.5rem;
+  border-top: 1px solid #fff;
+  border-bottom: 1px solid #fff;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+}
+
+/* RESPONSIVE */
 /* Breakpoints 
     576px, 
     768px, 
     992px, 
     1200px 
 */
-/* Responsive */
 @media screen and (max-width: 576px) {
   .header-section__main h1 {
     font-size: 2.1rem;
