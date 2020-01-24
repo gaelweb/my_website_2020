@@ -285,6 +285,10 @@ html * {
   .header-section__main h2 {
     font-size: 1.6rem;
   }
+
+  .service-section__name {
+    margin-bottom: 5rem;
+  }
 }
 @media screen and (min-width: 576px) and (max-width: 768px) {
   .header-section__main h1 {
@@ -311,6 +315,15 @@ html * {
   .service-section__name svg {
     width: 4.5rem;
     height: 4.5rem;
+  }
+  .service-section__description {
+    padding-left: 0;
+    text-align: center;
+  }
+  .service-section__step-block {
+    border: none;
+    padding-left: 0;
+    padding-right: 0;
   }
 }
 

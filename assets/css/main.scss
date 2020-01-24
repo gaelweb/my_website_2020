@@ -329,6 +329,11 @@ html * {
       }
     }
   }
+  .service-section {
+    &__name {
+      margin-bottom: 5rem;
+    }
+  }
 }
 
 @media screen and (min-width: 576px) and (max-width: 768px) {
@@ -365,6 +370,15 @@ html * {
         width: 4.5rem;
         height: 4.5rem;
       }
+    }
+    &__description {
+      padding-left: 0;
+      text-align: center;
+    }
+    &__step-block {
+      border: none;
+      padding-left: 0;
+      padding-right: 0;
     }
   }
 }
