@@ -108,31 +108,34 @@ html * {
   padding-bottom: 5rem;
 
   &__profil {
-    max-width: 90%;
+    width: 85%;
+    height: 100%;
+    float: left;
+    border: $borderPink;
+    border-radius: $borderRadius;
+    padding: 3.5rem;
     img {
       margin: auto;
     }
-
     p {
       font-weight: lighter;
       font-style: italic;
       padding-top: 2rem;
-      font-size: 1.25rem;
+      font-size: 1.2rem;
       color: $grey;
     }
   }
   &__profil-logo {
-    width: 4rem;
-    height: 4rem;
     svg {
-      width: 4rem;
-      height: 4rem;
+      width: 2.5rem;
+      height: 2.5rem;
       fill: $violet;
     }
   }
 
   &__skills {
-    width: 90%;
+    width: 85%;
+    height: 100%;
     float: right;
     border: $borderPink;
     border-radius: $borderRadius;
@@ -182,7 +185,7 @@ html * {
   }
 }
 
-/* PROJECTS */
+/* PORTFOLIO */
 .project-section {
   background-color: $violet;
   width: 100%;
@@ -318,6 +321,7 @@ html * {
     }
   }
   &__infos {
+    padding-left: 5rem;
     div:nth-child(1n) {
       margin-bottom: 2rem;
     }
@@ -411,15 +415,13 @@ footer {
 
 @media screen and (max-width: 768px) {
   .about-section {
-    &__skills {
+    &__skills,
+    &__profil {
       padding-left: 0;
       padding-right: 0;
       border: none;
       float: none;
-    }
-
-    &__profil {
-      max-width: 100%;
+      width: 100%;
     }
   }
   .service-section {
@@ -442,12 +444,21 @@ footer {
   }
 }
 
-@media screen and(max-width: 767px) {
+@media screen and (max-width: 767px) {
   .contact-section {
     &__row {
       div:nth-child(1) {
         padding-top: 2rem;
       }
     }
+    &__infos {
+      padding-left: 0;
+    }
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .about-section__row {
+    max-height: 45rem;
   }
 }

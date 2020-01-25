@@ -89,7 +89,12 @@ html * {
   padding-bottom: 5rem;
 }
 .about-section__profil {
-  max-width: 90%;
+  width: 85%;
+  height: 100%;
+  float: left;
+  border: 1px solid #8b2367;
+  border-radius: 3px;
+  padding: 3.5rem;
 }
 .about-section__profil img {
   margin: auto;
@@ -98,20 +103,17 @@ html * {
   font-weight: lighter;
   font-style: italic;
   padding-top: 2rem;
-  font-size: 1.25rem;
+  font-size: 1.2rem;
   color: #8a8a8a;
 }
-.about-section__profil-logo {
-  width: 4rem;
-  height: 4rem;
-}
 .about-section__profil-logo svg {
-  width: 4rem;
-  height: 4rem;
+  width: 2.5rem;
+  height: 2.5rem;
   fill: #3f005b;
 }
 .about-section__skills {
-  width: 90%;
+  width: 85%;
+  height: 100%;
   float: right;
   border: 1px solid #8b2367;
   border-radius: 3px;
@@ -152,7 +154,7 @@ html * {
   padding-bottom: 0.5rem;
 }
 
-/* PROJECTS */
+/* PORTFOLIO */
 .project-section {
   background-color: #3f005b;
   width: 100%;
@@ -279,6 +281,9 @@ html * {
 .contact-section__row .form-group {
   padding-bottom: 1.25rem;
 }
+.contact-section__infos {
+  padding-left: 5rem;
+}
 .contact-section__infos div:nth-child(1n) {
   margin-bottom: 2rem;
 }
@@ -352,14 +357,12 @@ footer span::before {
   }
 }
 @media screen and (max-width: 768px) {
-  .about-section__skills {
+  .about-section__skills, .about-section__profil {
     padding-left: 0;
     padding-right: 0;
     border: none;
     float: none;
-  }
-  .about-section__profil {
-    max-width: 100%;
+    width: 100%;
   }
 
   .service-section__name {
@@ -382,6 +385,14 @@ footer span::before {
 @media screen and (max-width: 767px) {
   .contact-section__row div:nth-child(1) {
     padding-top: 2rem;
+  }
+  .contact-section__infos {
+    padding-left: 0;
+  }
+}
+@media screen and (min-width: 992px) {
+  .about-section__row {
+    max-height: 45rem;
   }
 }
 
