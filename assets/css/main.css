@@ -155,16 +155,17 @@ html * {
 }
 
 /* PORTFOLIO */
-.project-section {
+.portfolio-section {
   background-color: #3f005b;
+  padding-bottom: 5rem;
   width: 100%;
   min-height: 1000px;
 }
-.project-section__title-block {
+.portfolio-section__title-block {
   padding-top: 5rem;
   padding-bottom: 5rem;
 }
-.project-section__title-block h2 {
+.portfolio-section__title-block h2 {
   color: #fff;
   font-family: "Road Rage";
   font-size: 2.5rem;
@@ -172,6 +173,59 @@ html * {
   border-bottom: 1px solid #fff;
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
+}
+.portfolio-section__article {
+  padding: 2rem;
+  margin-bottom: 2rem;
+  height: 18rem;
+  position: relative;
+  border-radius: 3px;
+}
+.portfolio-section__article img {
+  position: absolute;
+  border-radius: 3px;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  content: "";
+  object-fit: cover;
+  object-position: top left;
+}
+.portfolio-section__article .filter-img {
+  height: 50%;
+  transition: height 0.2s;
+  visibility: hidden;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  color: #fff;
+  width: 100%;
+  background-color: rgba(63, 0, 91, 0.75);
+}
+.portfolio-section__article .filter-img h3 {
+  color: #fff;
+}
+.portfolio-section__article .filter-img:hover {
+  cursor: pointer;
+}
+.portfolio-section__article:hover .filter-img {
+  visibility: visible;
+  height: 100%;
+  transition: height 0.2s;
+}
+.portfolio-section__link {
+  border: 0.3px solid #fff;
+  margin-top: 1rem;
+  padding: 0.5rem 1rem 0.5rem 1rem;
+  color: #fff;
+  font-weight: lighter;
+}
+.portfolio-section__link:hover {
+  color: #8b2367;
+  background-color: #fff;
+  text-decoration: none;
+  border-radius: 3px;
 }
 
 /* SERVICES */

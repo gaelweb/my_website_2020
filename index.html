@@ -218,12 +218,87 @@
     </section>
 
     <!-- Portfolio -->
-    <section class="project-section" id="portfolio">
+    <section class="portfolio-section" id="portfolio">
       <div class="container">
         <div
-          class="project-section__title-block d-flex justify-content-center align-items-center"
+          class="portfolio-section__title-block d-flex justify-content-center align-items-center"
         >
-          <h2>Réalisations</h2>
+          <h2>Portfolio</h2>
+        </div>
+        <div class="row">
+          <div class="col-md-6">
+            <div class="portfolio-section__article d-flex flex-column">
+              <img
+                src="assets/img/screenshot_laforet.png"
+                alt="img_portfolio"
+              />
+              <div
+                class="filter-img d-flex flex-column align-items-center justify-content-center"
+              >
+                <h3>Laforêt Immobilier</h3>
+                <span>Développeur Front-End</span>
+                <a
+                  href="https://www.laforet.com/"
+                  class="portfolio-section__link"
+                  target="_blank"
+                  >VOIR</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="portfolio-section__article d-flex flex-column">
+              <img src="assets/img/screenshot_eldom.png" alt="img_portfolio" />
+              <div
+                class="filter-img d-flex flex-column align-items-center justify-content-center"
+              >
+                <h3>Eldom</h3>
+                <span>Développeur Full-Stack</span>
+                <a
+                  href="https://www.eldom.fr/"
+                  class="portfolio-section__link"
+                  target="_blank"
+                  >VOIR</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-6">
+            <div class="portfolio-section__article d-flex flex-column">
+              <img
+                src="assets/img/screenshot_laforet.png"
+                alt="img_portfolio"
+              />
+              <div
+                class="filter-img d-flex flex-column align-items-center justify-content-center"
+              >
+                <h3>Lorem ipsum</h3>
+                <span>Lorem ipsum</span>
+                <a href="#" class="portfolio-section__link" target="_blank"
+                  >VOIR</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="portfolio-section__article d-flex flex-column">
+              <img
+                src="assets/img/screenshot_laforet.png"
+                alt="img_portfolio"
+              />
+              <div
+                class="filter-img d-flex flex-column align-items-center justify-content-center"
+              >
+                <h3>Lorem ipsum</h3>
+                <span>Lorem ipsum</span>
+                <a href="#" class="portfolio-section__link" target="_blank"
+                  >VOIR</a
+                >
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </section>
@@ -657,7 +732,7 @@
       origin: "top",
       distance: "4rem"
     });
-    sr.reveal(".about-section__profil", {
+    /* sr.reveal(".about-section__profil", {
       duration: 3000,
       origin: "left",
       distance: "10rem"
@@ -666,7 +741,7 @@
       duration: 3000,
       origin: "right",
       distance: "10rem"
-    });
+    }); */
     var year = new Date().getFullYear();
     document.getElementById("year").innerHTML =
       "Copyright Gaël Monbrault" + " " + year;
