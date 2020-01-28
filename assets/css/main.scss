@@ -108,63 +108,36 @@ html * {
   padding-bottom: 5rem;
 
   &__profil {
-    width: 85%;
-    height: 100%;
-    float: left;
-    border: $borderPink;
-    border-radius: $borderRadius;
-    padding: 3.5rem;
     img {
-      margin: auto;
+      max-width: 10rem;
+      max-height: 10rem;
     }
-    p {
-      font-weight: lighter;
-      font-style: italic;
-      padding-top: 2rem;
-      font-size: 1.2rem;
+    h3 {
+      color: $violet;
+      font-size: 2.2rem;
+      font-weight: bold;
+    }
+    h4 {
+      padding-top: 0.5rem;
+      padding-bottom: 0.5rem;
       color: $grey;
     }
-  }
-  &__profil-logo {
-    svg {
-      width: 2.5rem;
-      height: 2.5rem;
-      fill: $violet;
+    p {
+      color: $grey;
+      font-weight: lighter;
+      font-size: 1.1rem;
     }
-  }
-
-  &__skills {
-    width: 85%;
-    height: 100%;
-    float: right;
-    border: $borderPink;
-    border-radius: $borderRadius;
-    padding: 3.5rem;
-
-    h4 {
-      font-family: "Road Rage";
+    &__button {
+      margin-top: 1rem;
+      width: 12rem;
+      border: 1px solid $pink;
+      text-align: center;
+      padding: 1rem;
       color: $pink;
-      padding-bottom: 2rem;
-    }
-  }
-
-  &__skills-content {
-    margin-top: 2rem;
-
-    .skills {
-      margin-top: 2rem;
-
-      span {
-        font-size: 1rem;
-        font-style: italic;
-      }
-
-      .progress {
-        height: 0.25rem;
-
-        .progress-bar {
-          background-color: $pink;
-        }
+      &:hover {
+        text-decoration: none;
+        background-color: $pink;
+        color: $white;
       }
     }
   }
@@ -471,16 +444,6 @@ footer {
 }
 
 @media screen and (max-width: 768px) {
-  .about-section {
-    &__skills,
-    &__profil {
-      padding-left: 0;
-      padding-right: 0;
-      border: none;
-      float: none;
-      width: 100%;
-    }
-  }
   .service-section {
     &__name {
       max-width: 100%;
@@ -512,10 +475,16 @@ footer {
       padding-left: 0;
     }
   }
-}
-
-@media screen and (min-width: 992px) {
-  .about-section__row {
-    max-height: 45rem;
+  .about-section {
+    &__profil {
+      &__description {
+        margin-top: 2rem;
+        text-align: center;
+      }
+      &__button {
+        margin-left: auto;
+        margin-right: auto;
+      }
+    }
   }
 }

@@ -88,57 +88,37 @@ html * {
 .about-section {
   padding-bottom: 5rem;
 }
-.about-section__profil {
-  width: 85%;
-  height: 100%;
-  float: left;
-  border: 1px solid #8b2367;
-  border-radius: 3px;
-  padding: 3.5rem;
-}
 .about-section__profil img {
-  margin: auto;
+  max-width: 10rem;
+  max-height: 10rem;
 }
-.about-section__profil p {
-  font-weight: lighter;
-  font-style: italic;
-  padding-top: 2rem;
-  font-size: 1.2rem;
+.about-section__profil h3 {
+  color: #3f005b;
+  font-size: 2.2rem;
+  font-weight: bold;
+}
+.about-section__profil h4 {
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
   color: #8a8a8a;
 }
-.about-section__profil-logo svg {
-  width: 2.5rem;
-  height: 2.5rem;
-  fill: #3f005b;
+.about-section__profil p {
+  color: #8a8a8a;
+  font-weight: lighter;
+  font-size: 1.1rem;
 }
-.about-section__skills {
-  width: 85%;
-  height: 100%;
-  float: right;
+.about-section__profil__button {
+  margin-top: 1rem;
+  width: 12rem;
   border: 1px solid #8b2367;
-  border-radius: 3px;
-  padding: 3.5rem;
-}
-.about-section__skills h4 {
-  font-family: "Road Rage";
+  text-align: center;
+  padding: 1rem;
   color: #8b2367;
-  padding-bottom: 2rem;
 }
-.about-section__skills-content {
-  margin-top: 2rem;
-}
-.about-section__skills-content .skills {
-  margin-top: 2rem;
-}
-.about-section__skills-content .skills span {
-  font-size: 1rem;
-  font-style: italic;
-}
-.about-section__skills-content .skills .progress {
-  height: 0.25rem;
-}
-.about-section__skills-content .skills .progress .progress-bar {
+.about-section__profil__button:hover {
+  text-decoration: none;
   background-color: #8b2367;
+  color: #fff;
 }
 .about-section__title-block {
   padding-top: 5rem;
@@ -411,14 +391,6 @@ footer span::before {
   }
 }
 @media screen and (max-width: 768px) {
-  .about-section__skills, .about-section__profil {
-    padding-left: 0;
-    padding-right: 0;
-    border: none;
-    float: none;
-    width: 100%;
-  }
-
   .service-section__name {
     max-width: 100%;
   }
@@ -443,10 +415,14 @@ footer span::before {
   .contact-section__infos {
     padding-left: 0;
   }
-}
-@media screen and (min-width: 992px) {
-  .about-section__row {
-    max-height: 45rem;
+
+  .about-section__profil__description {
+    margin-top: 2rem;
+    text-align: center;
+  }
+  .about-section__profil__button {
+    margin-left: auto;
+    margin-right: auto;
   }
 }
 
