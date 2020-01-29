@@ -29,6 +29,63 @@ html * {
 }
 
 /* NAVBAR */
+.navbar-section {
+  background-color: #3f005b;
+}
+.navbar-section .navbar-brand {
+  color: #fff;
+}
+.navbar-section .navbar-brand:hover {
+  color: #8b2367;
+}
+.navbar-section .nav-item {
+  margin-left: 1.3rem;
+}
+.navbar-section .nav-item .nav-link {
+  color: #fff;
+  font-size: 1rem;
+}
+.navbar-section .nav-item__underline {
+  width: 0%;
+  height: 1px;
+}
+.navbar-section .nav-item:hover .nav-item__underline {
+  width: 100%;
+  background-color: #8b2367;
+  transition: width 0.25s;
+}
+.navbar-section button {
+  height: auto;
+  width: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.navbar-section .navbar-toggler:focus {
+  outline: 0 !important;
+}
+.navbar-section .navbar-toggler__line {
+  width: 1.5rem;
+  height: 2px;
+  margin-top: 0.2rem;
+  margin-bottom: 0.2rem;
+  background-color: #fff;
+  transform: rotate(0deg);
+  transition: transform 0.5s;
+}
+.navbar-section .navbar-toggler[aria-expanded=true] .navbar-toggler__line {
+  margin: auto;
+}
+.navbar-section .navbar-toggler[aria-expanded=true] span:nth-child(1) {
+  transform: rotate(45deg);
+  transition: transform 0.5s;
+}
+.navbar-section .navbar-toggler[aria-expanded=true] span:nth-child(2) {
+  transform: rotate(-45deg);
+  transition: transform 0.5s;
+}
+
 .nav-logo {
   font-family: "Road Rage";
 }
@@ -433,6 +490,17 @@ footer span::before {
   }
 }
 @media screen and (max-width: 767px) {
+  .navbar-section .nav-item {
+    margin-left: 0;
+    margin-top: 0.5rem;
+  }
+  .navbar-section .nav-item__underline {
+    display: none;
+  }
+  .navbar-section .nav-item:hover .nav-link {
+    color: #8b2367;
+  }
+
   .contact-section__row div:nth-child(1) {
     padding-top: 2rem;
   }

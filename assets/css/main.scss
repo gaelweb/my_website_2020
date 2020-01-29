@@ -40,6 +40,68 @@ html * {
 }
 
 /* NAVBAR */
+.navbar-section {
+  background-color: $violet;
+  .navbar-brand {
+    color: $white;
+    &:hover {
+      color: $pink;
+    }
+  }
+  .nav-item {
+    margin-left: 1.3rem;
+    .nav-link {
+      color: $white;
+      font-size: 1rem;
+    }
+    &__underline {
+      width: 0%;
+      height: 1px;
+    }
+    &:hover {
+      .nav-item__underline {
+        width: 100%;
+        background-color: $pink;
+        transition: width 0.25s;
+      }
+    }
+  }
+  button {
+    height: auto;
+    width: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .navbar-toggler {
+    &:focus {
+      outline: 0 !important;
+    }
+    &__line {
+      width: 1.5rem;
+      height: 2px;
+      margin-top: 0.2rem;
+      margin-bottom: 0.2rem;
+      background-color: $white;
+      transform: rotate(0deg);
+      transition: transform 0.5s;
+    }
+    &[aria-expanded="true"] {
+      .navbar-toggler__line {
+        margin: auto;
+      }
+      span:nth-child(1) {
+        transform: rotate(45deg);
+        transition: transform 0.5s;
+      }
+      span:nth-child(2) {
+        transform: rotate(-45deg);
+        transition: transform 0.5s;
+      }
+    }
+  }
+}
 .nav-logo {
   font-family: "Road Rage";
 }
@@ -489,6 +551,20 @@ footer {
 }
 
 @media screen and (max-width: 767px) {
+  .navbar-section {
+    .nav-item {
+      margin-left: 0;
+      margin-top: 0.5rem;
+      &__underline {
+        display: none;
+      }
+      &:hover {
+        .nav-link {
+          color: $pink;
+        }
+      }
+    }
+  }
   .contact-section {
     &__row {
       div:nth-child(1) {
