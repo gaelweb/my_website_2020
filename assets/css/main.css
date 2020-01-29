@@ -516,6 +516,10 @@ footer span::before {
     margin-left: auto;
     margin-right: auto;
   }
+
+  .skills-section__more-container {
+    margin-top: 2.5rem;
+  }
 }
 
 /*# sourceMappingURL=main.css.map */
