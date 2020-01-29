@@ -64,8 +64,8 @@
           class="d-flex flex-column justify-content-center align-items-center h-100"
         >
           <h1 class="header-section__main-title">Gael Monbrault</h1>
-          <h2>Web developer</h2>
-          <h2>Freelance</h2>
+          <h2 class="header-section__main-subtitle">Web developer</h2>
+          <h2 class="header-section__main-suptitle">Freelance</h2>
         </div>
       </div>
     </section>
@@ -80,7 +80,9 @@
         </div>
         <div class="row about-section__profil">
           <div class="col-md-6">
-            <div class="d-flex justify-content-center align-items-center h-100">
+            <div
+              class="about-section__profil__img d-flex justify-content-center align-items-center h-100"
+            >
               <img
                 src="assets/img/photo-profil-circle.png"
                 alt="photo-profil-gael-monbrault"
@@ -89,9 +91,9 @@
           </div>
           <div class="col-md-6">
             <div class="d-flex flex-column about-section__profil__description">
-              <h3>Gaël Monbrault</h3>
-              <h4>Développeur Web</h4>
-              <p>
+              <h3 class="title_scalable">Gaël Monbrault</h3>
+              <h4 class="title_scalable">Développeur Web</h4>
+              <p class="title_scalable">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem
                 reprehenderit dolor incidunt commodi, fugit, doloremque eos
                 accusamus perspiciatis minus sequi ut numquam architecto
@@ -234,7 +236,9 @@
         </div>
         <div class="row">
           <div class="col-md-6">
-            <div class="portfolio-section__article d-flex flex-column">
+            <div
+              class="portfolio-section__article d-flex flex-column portfolio-reveal-left"
+            >
               <img
                 src="assets/img/screenshot_laforet.png"
                 alt="img_portfolio"
@@ -254,7 +258,9 @@
             </div>
           </div>
           <div class="col-md-6">
-            <div class="portfolio-section__article d-flex flex-column">
+            <div
+              class="portfolio-section__article d-flex flex-column portfolio-reveal-right"
+            >
               <img src="assets/img/screenshot_eldom.png" alt="img_portfolio" />
               <div
                 class="filter-img d-flex flex-column align-items-center justify-content-center"
@@ -273,7 +279,9 @@
         </div>
         <div class="row">
           <div class="col-md-6">
-            <div class="portfolio-section__article d-flex flex-column">
+            <div
+              class="portfolio-section__article d-flex flex-column portfolio-reveal-left"
+            >
               <img
                 src="assets/img/screenshot_k-actus.png"
                 alt="img_portfolio"
@@ -293,7 +301,9 @@
             </div>
           </div>
           <div class="col-md-6">
-            <div class="portfolio-section__article d-flex flex-column">
+            <div
+              class="portfolio-section__article d-flex flex-column portfolio-reveal-right"
+            >
               <img
                 src="assets/img/screenshot_laforet.png"
                 alt="img_portfolio"
@@ -741,9 +751,32 @@
     window.sr = ScrollReveal();
     sr.reveal(".header-section__main-title", {
       duration: 2000,
-      origin: "top",
+      scale: 2,
       distance: "4rem"
     });
+    sr.reveal(".about-section__profil__img", {
+      duration: 2500,
+      scale: 2,
+      reset: true
+    });
+    sr.reveal(".title_scalable", {
+      duration: 2000,
+      scale: 2,
+      reset: true
+    });
+    sr.reveal(".portfolio-reveal-left", {
+      duration: 2000,
+      origin: "left",
+      distance: "14rem",
+      reset: true
+    });
+    sr.reveal(".portfolio-reveal-right", {
+      duration: 2000,
+      origin: "right",
+      distance: "14rem",
+      reset: true
+    });
+
     var year = new Date().getFullYear();
     document.getElementById("year").innerHTML =
       "Copyright Gaël Monbrault" + " " + year;

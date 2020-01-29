@@ -19,6 +19,7 @@
 /* Custom styling */
 html,
 body {
+  overflow-x: hidden;
   margin: 0;
   padding: 0;
   scroll-behavior: smooth;
@@ -408,9 +409,6 @@ html * {
 }
 .contact-section__infos span {
   padding-left: 1rem;
-}
-.contact-section__infos :nth-child(2)::before {
-  content: "@";
 }
 .contact-section .btn-contact {
   color: #fff;

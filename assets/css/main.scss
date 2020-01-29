@@ -30,6 +30,7 @@ $paddingTitle: 0.5rem;
 
 html,
 body {
+  overflow-x: hidden;
   margin: 0;
   padding: 0;
   scroll-behavior: smooth;
@@ -447,11 +448,6 @@ html * {
     }
     span {
       padding-left: 1rem;
-    }
-    :nth-child(2) {
-      &::before {
-        content: "\000040";
-      }
     }
   }
   .btn-contact {
