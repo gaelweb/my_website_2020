@@ -414,14 +414,14 @@ html * {
   content: "@";
 }
 .contact-section .btn-contact {
-  background-color: #8b2367;
   color: #fff;
-  padding-left: 2rem;
-  padding-right: 2rem;
+  padding: 1rem;
+  border: 1px solid #fff;
+  min-width: 9rem;
 }
 .contact-section .btn-contact:hover {
   color: #fff;
-  background-color: rgba(139, 35, 103, 0.62);
+  background-color: #8b2367;
 }
 
 /* FOOTER */

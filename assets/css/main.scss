@@ -456,14 +456,14 @@ html * {
     }
   }
   .btn-contact {
-    background-color: $pink;
     color: $white;
-    padding-left: 2rem;
-    padding-right: 2rem;
+    padding: 1rem;
+    border: 1px solid $white;
+    min-width: 9rem;
 
     &:hover {
       color: $white;
-      background-color: rgba(139, 35, 103, 0.62);
+      background-color: $pink;
     }
   }
 }
