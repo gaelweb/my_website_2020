@@ -20,6 +20,8 @@
 /* Custom colors */
 $black: #222327;
 $white: #fff;
+$green: #75dab4;
+
 $violet: #3f005b;
 $pink: #8b2367;
 $grey: #8a8a8a;
@@ -29,6 +31,15 @@ $border: 1px solid;
 $borderRadius: 3px;
 $borderPink: 1px solid $pink;
 $paddingTitle: 0.5rem;
+
+/* Font weight */
+$Thin: 100;
+$Light: 200;
+$Regular: 400;
+$Medium: 500;
+$SemiBold: 600;
+$ExtraBold: 800;
+$ExtraBlack: 900;
 
 html,
 body {
@@ -44,11 +55,11 @@ html * {
 
 /* NAVBAR */
 .navbar-section {
-  background-color: $violet;
+  background-color: transparent;
   .navbar-brand {
     color: $white;
     &:hover {
-      color: $pink;
+      color: $green;
     }
   }
   .nav-item {
@@ -64,7 +75,7 @@ html * {
     &:hover {
       .nav-item__underline {
         width: 100%;
-        background-color: $pink;
+        background-color: $green;
         transition: width 0.25s;
       }
     }
@@ -107,6 +118,7 @@ html * {
 }
 .nav-logo {
   font-family: "Poppins";
+  font-weight: $SemiBold;
 }
 
 /* HEADER */
@@ -131,18 +143,16 @@ html * {
       height: 100%;
       z-index: -1;
     }
-  }
-
-  ::after {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    width: 100%;
-    background: $violet;
-    opacity: 0.16;
-    z-index: -1;
+    &::after {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      bottom: 0;
+      width: 100%;
+      background: $black;
+      opacity: 0.85;
+    }
   }
 
   &__main {
@@ -150,16 +160,18 @@ html * {
 
     h1,
     h2 {
-      font-family: "Road Rage";
+      font-family: "Poppins";
       color: $white;
     }
 
     h1 {
-      font-size: 6rem;
+      font-size: 5rem;
+      font-weight: $ExtraBold;
     }
 
     h2 {
       font-size: 3rem;
+      font-weight: $Regular;
     }
 
     h2:nth-child(3) {
@@ -552,7 +564,7 @@ footer {
       }
       &:hover {
         .nav-link {
-          color: $pink;
+          color: $green;
         }
       }
     }

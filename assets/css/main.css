@@ -18,6 +18,7 @@
 }
 /* Custom colors */
 /* Custom styling */
+/* Font weight */
 html,
 body {
   overflow-x: hidden;
@@ -32,13 +33,13 @@ html * {
 
 /* NAVBAR */
 .navbar-section {
-  background-color: #3f005b;
+  background-color: transparent;
 }
 .navbar-section .navbar-brand {
   color: #fff;
 }
 .navbar-section .navbar-brand:hover {
-  color: #8b2367;
+  color: #75dab4;
 }
 .navbar-section .nav-item {
   margin-left: 1.3rem;
@@ -53,7 +54,7 @@ html * {
 }
 .navbar-section .nav-item:hover .nav-item__underline {
   width: 100%;
-  background-color: #8b2367;
+  background-color: #75dab4;
   transition: width 0.25s;
 }
 .navbar-section button {
@@ -90,6 +91,7 @@ html * {
 
 .nav-logo {
   font-family: "Poppins";
+  font-weight: 600;
 }
 
 /* HEADER */
@@ -114,30 +116,31 @@ html * {
   height: 100%;
   z-index: -1;
 }
-.header-section ::after {
+.header-section__banner::after {
   content: "";
   position: absolute;
   top: 0;
   left: 0;
   bottom: 0;
   width: 100%;
-  background: #3f005b;
-  opacity: 0.16;
-  z-index: -1;
+  background: #222327;
+  opacity: 0.85;
 }
 .header-section__main {
   height: 100%;
 }
 .header-section__main h1,
 .header-section__main h2 {
-  font-family: "Road Rage";
+  font-family: "Poppins";
   color: #fff;
 }
 .header-section__main h1 {
-  font-size: 6rem;
+  font-size: 5rem;
+  font-weight: 800;
 }
 .header-section__main h2 {
   font-size: 3rem;
+  font-weight: 400;
 }
 .header-section__main h2:nth-child(3) {
   font-size: 2.5rem;
@@ -489,7 +492,7 @@ footer span::before {
     display: none;
   }
   .navbar-section .nav-item:hover .nav-link {
-    color: #8b2367;
+    color: #75dab4;
   }
 
   .contact-section__row div:nth-child(1) {
