@@ -325,6 +325,12 @@ html * {
 .service-section__infos svg {
   fill: #fff;
 }
+.service-section__infos-title {
+  font-size: 2.2rem;
+  font-weight: bold;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
 .service-section__description {
   padding-left: 2rem;
 }
