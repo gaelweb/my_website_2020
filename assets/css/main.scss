@@ -277,7 +277,7 @@ html * {
 
     h2 {
       color: $white;
-      font-family: "Poppins", sans-serif;
+      font-family: "Fjalla one", sans-serif;
       font-size: 2.5rem;
       padding-top: $paddingTitle;
       padding-bottom: $paddingTitle;
@@ -356,13 +356,9 @@ html * {
     padding-bottom: 5rem;
 
     h2 {
-      font-family: "Road Rage";
+      font-family: "Fjalla one", sans-serif;
       font-size: 2.5rem;
-      color: $violet;
-      border-top: $border $violet;
-      border-bottom: $border $violet;
-      padding-top: $paddingTitle;
-      padding-bottom: $paddingTitle;
+      color: $black;
     }
   }
   &__name {
@@ -381,59 +377,21 @@ html * {
     padding-bottom: 5rem;
 
     svg {
-      fill: $white;
+      fill: $black;
     }
-  }
-  &__infos-title {
-    font-size: 2.2rem;
-    font-weight: bold;
-    padding-top: 1rem;
-    padding-bottom: 1rem;
   }
   &__description {
     padding-left: 2rem;
-  }
-
-  &__banner {
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    z-index: -1;
-
-    &::after {
-      content: "";
-      position: absolute;
-      top: 0;
-      left: 0;
-      bottom: 0;
-      width: 100%;
-      background: $violet;
-      opacity: 0.8;
+    h4 {
+      color: $black;
+      font-weight: $SemiBold;
+      font-size: 1.5rem;
     }
-    img {
-      content: "";
-      object-fit: cover;
-      width: 100%;
-      height: 100%;
-      z-index: -1;
+    p {
+      color: $grey;
+      font-weight: $Light;
+      font-size: 1.2rem;
     }
-  }
-  &__step {
-    padding-top: 10rem;
-    padding-bottom: 10rem;
-    svg {
-      fill: $violet;
-      height: 4rem;
-      width: 4rem;
-    }
-  }
-  &__step-block {
-    border: $borderPink;
-    border-radius: $borderRadius;
-    padding: 3rem;
   }
 }
 
@@ -624,11 +582,6 @@ footer {
     }
     &__description {
       padding-left: 0;
-    }
-    &__step-block {
-      border: none;
-      padding-left: 0;
-      padding-right: 0;
     }
   }
 }

@@ -241,7 +241,7 @@ html * {
 }
 .portfolio-section__title-block h2 {
   color: #fff;
-  font-family: "Poppins", sans-serif;
+  font-family: "Fjalla one", sans-serif;
   font-size: 2.5rem;
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
@@ -316,13 +316,9 @@ html * {
   padding-bottom: 5rem;
 }
 .service-section__title-block h2 {
-  font-family: "Road Rage";
+  font-family: "Fjalla one", sans-serif;
   font-size: 2.5rem;
-  color: #3f005b;
-  border-top: 0.3px solid #3f005b;
-  border-bottom: 0.3px solid #3f005b;
-  padding-top: 0.5rem;
-  padding-bottom: 0.5rem;
+  color: #222327;
 }
 .service-section__name {
   max-width: 85%;
@@ -340,56 +336,20 @@ html * {
   padding-bottom: 5rem;
 }
 .service-section__infos svg {
-  fill: #fff;
-}
-.service-section__infos-title {
-  font-size: 2.2rem;
-  font-weight: bold;
-  padding-top: 1rem;
-  padding-bottom: 1rem;
+  fill: #222327;
 }
 .service-section__description {
   padding-left: 2rem;
 }
-.service-section__banner {
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  z-index: -1;
+.service-section__description h4 {
+  color: #222327;
+  font-weight: 600;
+  font-size: 1.5rem;
 }
-.service-section__banner::after {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  width: 100%;
-  background: #3f005b;
-  opacity: 0.8;
-}
-.service-section__banner img {
-  content: "";
-  object-fit: cover;
-  width: 100%;
-  height: 100%;
-  z-index: -1;
-}
-.service-section__step {
-  padding-top: 10rem;
-  padding-bottom: 10rem;
-}
-.service-section__step svg {
-  fill: #3f005b;
-  height: 4rem;
-  width: 4rem;
-}
-.service-section__step-block {
-  border: 1px solid #8b2367;
-  border-radius: 3px;
-  padding: 3rem;
+.service-section__description p {
+  color: #8a8a8a;
+  font-weight: 200;
+  font-size: 1.2rem;
 }
 
 /* CONTACT */
@@ -548,11 +508,6 @@ footer span::before {
   }
   .service-section__description {
     padding-left: 0;
-  }
-  .service-section__step-block {
-    border: none;
-    padding-left: 0;
-    padding-right: 0;
   }
 }
 @media screen and (min-width: 992px) {
