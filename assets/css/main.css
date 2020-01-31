@@ -1,19 +1,20 @@
 @charset "UTF-8";
-/* Road-Rage fonts */
+/* Fjalla fonts */
 @font-face {
-  font-family: "Road Rage";
+  font-family: "Fjalla One", sans-serif;
   src: url("../fonts/Road_Rage.otf") format("otf");
 }
-/* Roboto Fonts */
+/* Poppins Fonts */
 @font-face {
-  font-family: "Roboto";
-  src: url("../fonts/Roboto-Black.ttf") format("ttf");
-  src: url("../fonts/Roboto-Bold.ttf") format("ttf");
-  src: url("../fonts/Roboto-Italic.ttf") format("ttf");
-  src: url("../fonts/Roboto-Light.ttf") format("ttf");
-  src: url("../fonts/Roboto-Medium.ttf") format("ttf");
-  src: url("../fonts/Roboto-Regular.ttf") format("ttf");
-  src: url("../fonts/Roboto-Thin.ttf") format("ttf");
+  font-family: "Poppins", sans-serif;
+  src: url("../fonts/Poppins-Black.ttf") format("ttf");
+  src: url("../fonts/Poppins-Bold.ttf") format("ttf");
+  src: url("../fonts/Poppins-ExtraBold.ttf") format("ttf");
+  src: url("../fonts/Poppins-Italic.ttf") format("ttf");
+  src: url("../fonts/Poppins-Light.ttf") format("ttf");
+  src: url("../fonts/Poppins-Medium.ttf") format("ttf");
+  src: url("../fonts/Poppins-Regular.ttf") format("ttf");
+  src: url("../fonts/Poppins-Thin.ttf") format("ttf");
 }
 /* Custom colors */
 /* Custom styling */
@@ -26,7 +27,7 @@ body {
 }
 
 html * {
-  font-family: "Roboto", "sans-sérif";
+  font-family: "Poppins", "sans-sérif";
 }
 
 /* NAVBAR */
@@ -88,7 +89,7 @@ html * {
 }
 
 .nav-logo {
-  font-family: "Road Rage";
+  font-family: "Poppins";
 }
 
 /* HEADER */
