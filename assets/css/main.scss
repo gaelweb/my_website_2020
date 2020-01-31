@@ -266,7 +266,7 @@ html * {
 
 /* PORTFOLIO */
 .portfolio-section {
-  background-color: $violet;
+  background-color: $black;
   padding-bottom: 5rem;
   width: 100%;
   min-height: 1000px;
@@ -277,17 +277,13 @@ html * {
 
     h2 {
       color: $white;
-      font-family: "Road Rage";
+      font-family: "Poppins", sans-serif;
       font-size: 2.5rem;
-      border-top: $border $white;
-      border-bottom: $border $white;
       padding-top: $paddingTitle;
       padding-bottom: $paddingTitle;
     }
   }
   &__article {
-    padding: 2rem;
-    margin-bottom: 2rem;
     height: 18rem;
     position: relative;
     border-radius: $borderRadius;
@@ -311,14 +307,8 @@ html * {
       bottom: 0;
       color: $white;
       width: 100%;
-      background-color: rgba(63, 0, 91, 0.75);
-
-      h3 {
-        color: $white;
-      }
-      &:hover {
-        cursor: pointer;
-      }
+      background-color: $black;
+      opacity: 0.85;
     }
     &:hover {
       .filter-img {
@@ -329,16 +319,30 @@ html * {
     }
   }
   &__link {
-    border: 0.3px solid $white;
     margin-top: 1rem;
     padding: 0.5rem 1rem 0.5rem 1rem;
     color: $white;
-    font-weight: lighter;
-    &:hover {
-      color: $pink;
-      background-color: $white;
-      text-decoration: none;
-      border-radius: $borderRadius;
+    svg {
+      fill: $white;
+      height: 4rem;
+      width: 4rem;
+      &:hover {
+        cursor: pointer;
+        fill: $green;
+      }
+    }
+  }
+  &__description {
+    padding-top: 1rem;
+    margin-bottom: 5rem;
+    :nth-child(1n) {
+      color: $white;
+    }
+    :first-child {
+      font-weight: $Light;
+    }
+    :last-child {
+      font-weight: $Thin;
     }
   }
 }

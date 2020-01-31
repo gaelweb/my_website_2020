@@ -230,7 +230,7 @@ html * {
 
 /* PORTFOLIO */
 .portfolio-section {
-  background-color: #3f005b;
+  background-color: #222327;
   padding-bottom: 5rem;
   width: 100%;
   min-height: 1000px;
@@ -241,16 +241,12 @@ html * {
 }
 .portfolio-section__title-block h2 {
   color: #fff;
-  font-family: "Road Rage";
+  font-family: "Poppins", sans-serif;
   font-size: 2.5rem;
-  border-top: 0.3px solid #fff;
-  border-bottom: 0.3px solid #fff;
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
 }
 .portfolio-section__article {
-  padding: 2rem;
-  margin-bottom: 2rem;
   height: 18rem;
   position: relative;
   border-radius: 3px;
@@ -275,13 +271,8 @@ html * {
   bottom: 0;
   color: #fff;
   width: 100%;
-  background-color: rgba(63, 0, 91, 0.75);
-}
-.portfolio-section__article .filter-img h3 {
-  color: #fff;
-}
-.portfolio-section__article .filter-img:hover {
-  cursor: pointer;
+  background-color: #222327;
+  opacity: 0.85;
 }
 .portfolio-section__article:hover .filter-img {
   visibility: visible;
@@ -289,17 +280,31 @@ html * {
   transition: height 0.2s;
 }
 .portfolio-section__link {
-  border: 0.3px solid #fff;
   margin-top: 1rem;
   padding: 0.5rem 1rem 0.5rem 1rem;
   color: #fff;
-  font-weight: lighter;
 }
-.portfolio-section__link:hover {
-  color: #8b2367;
-  background-color: #fff;
-  text-decoration: none;
-  border-radius: 3px;
+.portfolio-section__link svg {
+  fill: #fff;
+  height: 4rem;
+  width: 4rem;
+}
+.portfolio-section__link svg:hover {
+  cursor: pointer;
+  fill: #75dab4;
+}
+.portfolio-section__description {
+  padding-top: 1rem;
+  margin-bottom: 5rem;
+}
+.portfolio-section__description :nth-child(1n) {
+  color: #fff;
+}
+.portfolio-section__description :first-child {
+  font-weight: 200;
+}
+.portfolio-section__description :last-child {
+  font-weight: 100;
 }
 
 /* SERVICES */
