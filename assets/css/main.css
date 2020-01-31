@@ -133,17 +133,15 @@ html * {
 .header-section__main h2 {
   font-family: "Poppins";
   color: #fff;
+  text-align: left;
 }
 .header-section__main h1 {
-  font-size: 5rem;
+  font-size: 2.5rem;
   font-weight: 800;
 }
 .header-section__main h2 {
-  font-size: 3rem;
+  font-size: 1.5rem;
   font-weight: 400;
-}
-.header-section__main h2:nth-child(3) {
-  font-size: 2.5rem;
 }
 
 /* ABOUT */
@@ -464,13 +462,6 @@ footer span::before {
     1200px 
 */
 @media screen and (max-width: 576px) {
-  .header-section__main h1 {
-    font-size: 2.1rem;
-  }
-  .header-section__main h2 {
-    font-size: 1.6rem;
-  }
-
   .service-section__name {
     margin-bottom: 5rem;
   }
@@ -480,15 +471,14 @@ footer span::before {
     padding-right: 0;
   }
 }
-@media screen and (min-width: 576px) and (max-width: 768px) {
-  .header-section__main h1 {
-    font-size: 3rem;
+@media screen and (min-width: 768px) {
+  .header-section h1 {
+    font-size: 4rem;
   }
-  .header-section__main h2 {
+  .header-section h2 {
     font-size: 2rem;
   }
-}
-@media screen and (min-width: 768px) {
+
   .service-section__infos .container .row:nth-child(2) {
     padding-top: 3rem;
   }

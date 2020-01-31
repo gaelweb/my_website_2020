@@ -162,20 +162,17 @@ html * {
     h2 {
       font-family: "Poppins";
       color: $white;
+      text-align: left;
     }
 
     h1 {
-      font-size: 5rem;
+      font-size: 2.5rem;
       font-weight: $ExtraBold;
     }
 
     h2 {
-      font-size: 3rem;
+      font-size: 1.5rem;
       font-weight: $Regular;
-    }
-
-    h2:nth-child(3) {
-      font-size: 2.5rem;
     }
   }
 }
@@ -514,17 +511,6 @@ footer {
     1200px 
 */
 @media screen and (max-width: 576px) {
-  .header-section {
-    &__main {
-      h1 {
-        font-size: 2.1rem;
-      }
-
-      h2 {
-        font-size: 1.6rem;
-      }
-    }
-  }
   .service-section {
     &__name {
       margin-bottom: 5rem;
@@ -538,21 +524,15 @@ footer {
   }
 }
 
-@media screen and (min-width: 576px) and (max-width: 768px) {
+@media screen and (min-width: 768px) {
   .header-section {
-    &__main {
-      h1 {
-        font-size: 3rem;
-      }
-
-      h2 {
-        font-size: 2rem;
-      }
+    h1 {
+      font-size: 4rem;
+    }
+    h2 {
+      font-size: 2rem;
     }
   }
-}
-
-@media screen and (min-width: 768px) {
   .service-section__infos {
     .container {
       .row:nth-child(2) {
