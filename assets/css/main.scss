@@ -27,7 +27,7 @@ $pink: #8b2367;
 $grey: #8a8a8a;
 
 /* Custom styling */
-$border: 1px solid;
+$border: 0.3px solid;
 $borderRadius: 3px;
 $borderPink: 1px solid $pink;
 $paddingTitle: 0.5rem;
@@ -182,55 +182,63 @@ html * {
 
 /* ABOUT */
 .about-section {
-  padding-bottom: 5rem;
-
+  padding-bottom: 10rem;
+  padding-top: 10rem;
+  background-color: $black;
   &__profil {
-    img {
-      max-width: 10rem;
-      max-height: 10rem;
+    &__img {
+      width: 100%;
+      height: 100%;
+      img {
+        width: 100%;
+        height: auto;
+        object-fit: contain;
+      }
+      :nth-child(1) {
+        display: none;
+      }
     }
     h3 {
-      color: $violet;
-      font-size: 2.2rem;
-      font-weight: bold;
+      margin-top: 0;
+      color: $green;
+      //font-size: 2.5rem;
+      font-weight: $ExtraBold;
     }
     h4 {
-      padding-top: 0.5rem;
       padding-bottom: 0.5rem;
-      color: $grey;
+      color: $white;
+      font-size: 1.5rem;
+      font-weight: $SemiBold;
     }
     p {
-      color: $grey;
-      font-weight: lighter;
-      font-size: 1.1rem;
+      margin-top: 1rem;
+      color: $white;
+      font-weight: $Regular;
+      font-size: 1.2rem;
     }
     &__button {
-      margin-top: 1rem;
-      width: 12rem;
-      border: 1px solid $pink;
+      width: 15rem;
+      border: $border $green;
       text-align: center;
       padding: 1rem;
-      color: $pink;
+      color: $white;
       &:hover {
         text-decoration: none;
-        background-color: $pink;
+        background-color: $green;
         color: $white;
       }
     }
-  }
-
-  &__title-block {
-    padding-top: 5rem;
-    padding-bottom: 5rem;
-
-    h2 {
-      font-family: "Road Rage";
-      font-size: 2.5rem;
-      color: $violet;
-      border-top: $border $violet;
-      border-bottom: $border $violet;
-      padding-top: $paddingTitle;
-      padding-bottom: $paddingTitle;
+    &__bottom {
+      margin-top: 2.5rem;
+      svg {
+        height: 2.5rem;
+        width: 2.5rem;
+        fill: $green;
+        &:hover {
+          fill: $white;
+          cursor: pointer;
+        }
+      }
     }
   }
 }
@@ -552,6 +560,23 @@ footer {
       }
     }
   }
+  .about-section {
+    &__profil {
+      &__img {
+        :nth-child(1) {
+          display: block;
+        }
+        :nth-child(2) {
+          display: none;
+        }
+      }
+      .svg-about {
+        a {
+          margin-left: 2rem;
+        }
+      }
+    }
+  }
 }
 
 @media screen and (max-width: 767px) {
@@ -589,6 +614,15 @@ footer {
         margin-left: auto;
         margin-right: auto;
       }
+      &__img {
+        max-height: 11rem;
+      }
+      .svg-about {
+        margin-top: 1rem;
+        a {
+          padding: 1rem;
+        }
+      }
     }
   }
   .skills-section {
@@ -611,6 +645,24 @@ footer {
       border: none;
       padding-left: 0;
       padding-right: 0;
+    }
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .about-section {
+    &__profil {
+      &__img {
+        max-width: 80%;
+        height: 100%;
+        img {
+          max-width: 80%;
+          height: auto;
+        }
+      }
+      h3 {
+        font-size: 2.5rem;
+      }
     }
   }
 }
