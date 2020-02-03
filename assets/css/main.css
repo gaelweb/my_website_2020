@@ -310,7 +310,6 @@ html * {
 /* SERVICES */
 .service-section {
   width: 100%;
-  padding-bottom: 5rem;
 }
 .service-section__title-block {
   padding-top: 5rem;
@@ -352,6 +351,56 @@ html * {
   font-weight: 200;
   font-size: 1.2rem;
   padding-top: 0.3rem;
+}
+.service-section__extras {
+  width: 100%;
+  position: relative;
+  color: #fff;
+  margin-top: 5rem;
+  padding-top: 8rem;
+  padding-bottom: 8rem;
+}
+.service-section__extras__img {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.service-section__extras__img img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: top;
+  z-index: -1;
+}
+.service-section__extras__img::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: #222327;
+  opacity: 0.83;
+}
+.service-section__extras h2 {
+  font-size: 2.75rem;
+  font-weight: 600;
+}
+.service-section__extras__list {
+  padding-left: 0;
+}
+.service-section__extras__list li {
+  list-style: none;
+  font-weight: 400;
+  font-size: 1.2rem;
+}
+.service-section__extras__list li span {
+  border-bottom: 1px solid #75dab4;
+  width: 100%;
+}
+.service-section__extras__list li:nth-child(1n+2) {
+  margin-top: 2.85rem;
 }
 
 /* CONTACT */
@@ -512,6 +561,9 @@ footer span::before {
     padding-left: 0;
     text-align: center;
   }
+  .service-section__extras__list {
+    margin-top: 5rem;
+  }
 }
 @media screen and (min-width: 992px) {
   .about-section__profil__img {
@@ -524,6 +576,13 @@ footer span::before {
   }
   .about-section__profil h3 {
     font-size: 2.5rem;
+  }
+
+  .service-section__extras__list {
+    padding-left: 5rem;
+  }
+  .service-section__extras h2 {
+    font-size: 3.5rem;
   }
 }
 
