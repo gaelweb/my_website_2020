@@ -406,8 +406,9 @@ html * {
 /* CONTACT */
 .contact-section {
   width: 100%;
-  background-color: rgba(63, 0, 91, 0.92);
+  background-color: #222327;
   color: #fff;
+  padding-bottom: 5rem;
 }
 .contact-section__title-block {
   padding-top: 5rem;
@@ -415,51 +416,78 @@ html * {
 }
 .contact-section__title-block h2 {
   color: #fff;
-  font-family: "Road Rage";
+  font-family: "Fjalla one", sans-serif;
   font-size: 2.5rem;
-  border-top: 0.3px solid #fff;
-  border-bottom: 0.3px solid #fff;
-  padding-top: 0.5rem;
-  padding-bottom: 0.5rem;
 }
 .contact-section__row {
-  padding: 3rem;
-  background-color: #3f005b;
   border-radius: 3px;
 }
-.contact-section__row .form-group {
-  padding-bottom: 1.25rem;
+.contact-section__form .form-group {
+  padding-bottom: 1.5rem;
 }
-.contact-section__infos {
-  padding-left: 5rem;
+.contact-section__form input,
+.contact-section__form textarea {
+  border: 0;
+  background-color: rgba(255, 255, 255, 0.1);
+  font-weight: 200;
+  color: #75dab4;
+}
+.contact-section__form input:focus,
+.contact-section__form textarea:focus {
+  background-color: rgba(255, 255, 255, 0.1);
+  color: #fff;
+}
+.contact-section__form input::-webkit-input-placeholder,
+.contact-section__form textarea::-webkit-input-placeholder {
+  /* Chrome/Opera/Safari */
+  color: #8a8a8a;
+}
+.contact-section__form input::-moz-placeholder,
+.contact-section__form textarea::-moz-placeholder {
+  /* Firefox 19+ */
+  color: #8a8a8a;
+}
+.contact-section__form input:-ms-input-placeholder,
+.contact-section__form textarea:-ms-input-placeholder {
+  /* IE 10+ */
+  color: #8a8a8a;
+}
+.contact-section__form input:-moz-placeholder,
+.contact-section__form textarea:-moz-placeholder {
+  /* Firefox 18- */
+  color: #8a8a8a;
 }
 .contact-section__infos div:nth-child(1n) {
   margin-bottom: 2rem;
 }
-.contact-section__infos svg {
-  height: 1rem;
-  width: 1rem;
-  fill: #fff;
-}
 .contact-section__infos span {
   padding-left: 1rem;
+}
+.contact-section__infos div > span:nth-child(1) {
+  font-weight: 100;
+  color: #8a8a8a;
+}
+.contact-section__infos div > span:nth-child(2) {
+  font-weight: 400;
 }
 .contact-section .btn-contact {
   color: #fff;
   padding: 1rem;
-  border: 1px solid #fff;
+  border: 1px solid #75dab4;
+  border-radius: 0;
   min-width: 9rem;
+  font-weight: 200;
 }
 .contact-section .btn-contact:hover {
   color: #fff;
-  background-color: #8b2367;
+  background-color: #75dab4;
 }
 
 /* FOOTER */
 footer {
   padding-top: 3rem;
   padding-bottom: 3rem;
-  background-color: rgba(63, 0, 91, 0.92);
+  background-color: #222327;
   color: #fff;
 }
 footer span {

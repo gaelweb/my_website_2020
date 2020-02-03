@@ -450,8 +450,9 @@ html * {
 /* CONTACT */
 .contact-section {
   width: 100%;
-  background-color: rgba(63, 0, 91, 0.92);
+  background-color: $black;
   color: $white;
+  padding-bottom: 5rem;
 
   &__title-block {
     padding-top: 5rem;
@@ -459,45 +460,71 @@ html * {
 
     h2 {
       color: $white;
-      font-family: "Road Rage";
+      font-family: "Fjalla one", sans-serif;
       font-size: 2.5rem;
-      border-top: $border $white;
-      border-bottom: $border $white;
-      padding-top: $paddingTitle;
-      padding-bottom: $paddingTitle;
     }
   }
   &__row {
-    padding: 3rem;
-    background-color: $violet;
     border-radius: $borderRadius;
+  }
+  &__form {
     .form-group {
-      padding-bottom: 1.25rem;
+      padding-bottom: 1.5rem;
+    }
+    input,
+    textarea {
+      border: 0;
+      background-color: rgba(255, 255, 255, 0.1);
+      font-weight: $Light;
+      color: $green;
+      &:focus {
+        background-color: rgba(255, 255, 255, 0.1);
+        color: $white;
+      }
+      &::-webkit-input-placeholder {
+        /* Chrome/Opera/Safari */
+        color: $grey;
+      }
+      &::-moz-placeholder {
+        /* Firefox 19+ */
+        color: $grey;
+      }
+      &:-ms-input-placeholder {
+        /* IE 10+ */
+        color: $grey;
+      }
+      &:-moz-placeholder {
+        /* Firefox 18- */
+        color: $grey;
+      }
     }
   }
   &__infos {
-    padding-left: 5rem;
     div:nth-child(1n) {
       margin-bottom: 2rem;
     }
-    svg {
-      height: 1rem;
-      width: 1rem;
-      fill: $white;
-    }
     span {
       padding-left: 1rem;
+    }
+    div > span:nth-child(1) {
+      font-weight: $Thin;
+      color: $grey;
+    }
+    div > span:nth-child(2) {
+      font-weight: $Regular;
     }
   }
   .btn-contact {
     color: $white;
     padding: 1rem;
-    border: 1px solid $white;
+    border: 1px solid $green;
+    border-radius: 0;
     min-width: 9rem;
+    font-weight: $Light;
 
     &:hover {
       color: $white;
-      background-color: $pink;
+      background-color: $green;
     }
   }
 }
@@ -506,7 +533,7 @@ html * {
 footer {
   padding-top: 3rem;
   padding-bottom: 3rem;
-  background-color: rgba(63, 0, 91, 0.92);
+  background-color: $black;
   color: $white;
   span {
     font-weight: lighter;
