@@ -310,6 +310,7 @@ html * {
 /* SERVICES */
 .service-section {
   width: 100%;
+  padding-bottom: 5rem;
 }
 .service-section__title-block {
   padding-top: 5rem;
@@ -321,7 +322,9 @@ html * {
   color: #222327;
 }
 .service-section__name {
+  min-height: 10rem;
   max-width: 85%;
+  padding: 0.5rem;
 }
 .service-section__name svg {
   min-width: 3rem;
@@ -332,8 +335,6 @@ html * {
   position: relative;
   width: 100%;
   color: #fff;
-  padding-top: 5rem;
-  padding-bottom: 5rem;
 }
 .service-section__infos svg {
   fill: #222327;
@@ -350,6 +351,7 @@ html * {
   color: #8a8a8a;
   font-weight: 200;
   font-size: 1.2rem;
+  padding-top: 0.3rem;
 }
 
 /* CONTACT */
@@ -444,8 +446,8 @@ footer span::before {
     font-size: 2rem;
   }
 
-  .service-section__infos .container .row:nth-child(2) {
-    padding-top: 3rem;
+  .service-section__infos .container .row:nth-child(1n) {
+    padding-bottom: 3rem;
   }
 
   .about-section__profil__img :nth-child(1) {
@@ -508,6 +510,7 @@ footer span::before {
   }
   .service-section__description {
     padding-left: 0;
+    text-align: center;
   }
 }
 @media screen and (min-width: 992px) {

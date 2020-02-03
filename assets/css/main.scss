@@ -350,6 +350,7 @@ html * {
 /* SERVICES */
 .service-section {
   width: 100%;
+  padding-bottom: 5rem;
 
   &__title-block {
     padding-top: 5rem;
@@ -362,7 +363,9 @@ html * {
     }
   }
   &__name {
+    min-height: 10rem;
     max-width: 85%;
+    padding: 0.5rem;
     svg {
       min-width: 3rem;
       max-width: 3rem;
@@ -373,9 +376,6 @@ html * {
     position: relative;
     width: 100%;
     color: $white;
-    padding-top: 5rem;
-    padding-bottom: 5rem;
-
     svg {
       fill: $black;
     }
@@ -391,6 +391,7 @@ html * {
       color: $grey;
       font-weight: $Light;
       font-size: 1.2rem;
+      padding-top: 0.3rem;
     }
   }
 }
@@ -497,8 +498,8 @@ footer {
   }
   .service-section__infos {
     .container {
-      .row:nth-child(2) {
-        padding-top: 3rem;
+      .row:nth-child(1n) {
+        padding-bottom: 3rem;
       }
     }
   }
@@ -582,6 +583,7 @@ footer {
     }
     &__description {
       padding-left: 0;
+      text-align: center;
     }
   }
 }
