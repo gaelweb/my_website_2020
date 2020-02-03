@@ -214,11 +214,13 @@ html * {
   padding-top: 2rem;
   padding-bottom: 2rem;
 }
-.skills-section__name {
-  margin-bottom: 2rem;
+.skills-section__name:nth-child(2) {
+  padding-right: 3rem;
+  padding-left: 3rem;
 }
-.skills-section__name .progress-bar {
-  background-color: #8b2367;
+.skills-section__name {
+  padding-bottom: 2rem;
+  visibility: hidden;
 }
 .skills-section__more {
   border: 1px solid #8b2367;

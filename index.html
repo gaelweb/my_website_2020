@@ -145,69 +145,28 @@
         </div>
         <div class="row">
           <div class="col-md-6">
-            <div class="d-flex flex-column skills-section__name">
-              <span>HTML5</span>
-              <div class="progress" style="height: 3px;">
-                <div
-                  class="progress-bar"
-                  role="progressbar"
-                  style="width: 85%;"
-                  aria-valuenow="85"
-                  aria-valuemin="0"
-                  aria-valuemax="100"
-                ></div>
+            <div class="d-flex flex-column">
+              <div class="d-flex flex-row">
+                <div class="skills-section__name">
+                  <div id="skillHtml"></div>
+                </div>
+                <div class="skills-section__name">
+                  <div id="skillCss"></div>
+                </div>
+                <div class="skills-section__name">
+                  <div id="skillJs"></div>
+                </div>
               </div>
-            </div>
-            <div class="d-flex flex-column skills-section__name">
-              <span>CSS3</span>
-              <div class="progress" style="height: 3px;">
-                <div
-                  class="progress-bar"
-                  role="progressbar"
-                  style="width: 75%;"
-                  aria-valuenow="75"
-                  aria-valuemin="0"
-                  aria-valuemax="100"
-                ></div>
-              </div>
-            </div>
-            <div class="d-flex flex-column skills-section__name">
-              <span>Javascript</span>
-              <div class="progress" style="height: 3px;">
-                <div
-                  class="progress-bar"
-                  role="progressbar"
-                  style="width: 65%;"
-                  aria-valuenow="65"
-                  aria-valuemin="0"
-                  aria-valuemax="100"
-                ></div>
-              </div>
-            </div>
-            <div class="d-flex flex-column skills-section__name">
-              <span>Python 3</span>
-              <div class="progress" style="height: 3px;">
-                <div
-                  class="progress-bar"
-                  role="progressbar"
-                  style="width: 45%;"
-                  aria-valuenow="45"
-                  aria-valuemin="0"
-                  aria-valuemax="100"
-                ></div>
-              </div>
-            </div>
-            <div class="d-flex flex-column skills-section__name">
-              <span>Vue JS</span>
-              <div class="progress" style="height: 3px;">
-                <div
-                  class="progress-bar"
-                  role="progressbar"
-                  style="width: 80%;"
-                  aria-valuenow="80"
-                  aria-valuemin="0"
-                  aria-valuemax="100"
-                ></div>
+              <div class="d-flex flex-row">
+                <div class="skills-section__name">
+                  <div id="skillVuejs"></div>
+                </div>
+                <div class="skills-section__name">
+                  <div id="skillBootstrap"></div>
+                </div>
+                <div class="skills-section__name">
+                  <div id="skillPython"></div>
+                </div>
               </div>
             </div>
           </div>
@@ -866,6 +825,7 @@
     crossorigin="anonymous"
   ></script>
   <script src="https://unpkg.com/scrollreveal"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/progressbar.js/1.1.0/progressbar.min.js"></script>
   <script>
     window.sr = ScrollReveal();
     sr.reveal(".header-section__main-title", {
@@ -897,8 +857,42 @@
       reset: true
     });
 
+    /* Year creating website */
     var year = new Date().getFullYear();
     document.getElementById("year").innerHTML =
       "Copyright Gaël Monbrault" + " " + year;
+
+    /* Progressbar JS */
+    let skillsArray = [
+      { id: "#skillHtml", value: 0.9, text: "HTML5" },
+      { id: "#skillCss", value: 0.8, text: "CSS3" },
+      { id: "#skillJs", value: 0.75, text: "Javascript" },
+      { id: "#skillVuejs", value: 0.8, text: "Vue JS" },
+      { id: "#skillBootstrap", value: 0.85, text: "Bootstrap" },
+      { id: "#skillPython", value: 0.5, text: "Python" }
+    ];
+    let bars = skillsArray.map(
+      id =>
+        new ProgressBar.SemiCircle(id.id, {
+          strokeWidth: 2,
+          color: "#75DAB4",
+          trailWidth: 1,
+          valuePercent: id.value,
+          text: {
+            value: id.text,
+            alignToBottom: true,
+            style: {
+              color: "#222327",
+              position: "absolute",
+              left: "50%",
+              padding: 0,
+              margin: 0
+            }
+          }
+        })
+    );
+
+    /* Valeur % pour chaque compétence */
+    bars.forEach(bar => bar.animate(bar._opts.valuePercent));
   </script>
 </html>

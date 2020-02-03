@@ -248,16 +248,17 @@ html * {
     padding-top: 2rem;
     padding-bottom: 2rem;
   }
+  &__name:nth-child(2) {
+    padding-right: 3rem;
+    padding-left: 3rem;
+  }
   &__name {
-    margin-bottom: 2rem;
-    .progress-bar {
-      background-color: $pink;
-    }
+    padding-bottom: 2rem;
+    visibility: hidden;
   }
   &__more {
     border: $borderPink;
     font-weight: bold;
-
     padding: 0.5rem;
     margin-right: 1rem;
     margin-bottom: 1rem;
