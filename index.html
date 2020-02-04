@@ -740,19 +740,26 @@
         </div>
         <div class="row contact-section__row">
           <div class="col-md-6">
-            <form class="contact-section__form">
+            <form
+              class="contact-section__form contact__form"
+              action="/mail/mail.php"
+              method="post"
+            >
               <div class="form-group">
                 <input
                   type="text"
                   class="form-control"
+                  name="name"
                   id="nameForm"
                   placeholder="Nom"
+                  required
                 />
               </div>
               <div class="form-group">
                 <input
                   type="email"
                   class="form-control"
+                  name="email"
                   id="exampleFormControlInput1"
                   placeholder="Email"
                 />
@@ -760,6 +767,7 @@
               <div class="form-group">
                 <input
                   type="phone"
+                  name="phone"
                   class="form-control"
                   id="exampleFormControlInput1"
                   placeholder="Téléphone"
@@ -770,12 +778,25 @@
                   class="form-control"
                   id="exampleFormControlTextarea1"
                   rows="3"
+                  name="subject"
                   placeholder="Message"
                 ></textarea>
               </div>
-              <button type="submit" class="btn btn-contact float-right">
-                ENVOYER
+              <input
+                name="submit"
+                type="submit"
+                class="btn btn-contact float-right"
+                value="ENVOYER"
+              >
               </button>
+              <!-- Success message sending -->
+              <div class="row">
+                <div class="col-12">
+                    <div class="alert alert-success contact__msg" style="display: none" role="alert">
+                        Your message was sent successfully.
+                    </div>
+                </div>
+              </div>
             </form>
           </div>
           <div class="col-md-6">
@@ -826,6 +847,8 @@
   ></script>
   <script src="https://unpkg.com/scrollreveal"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/progressbar.js/1.1.0/progressbar.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+  <script src="assets/js/form.js"></script>
   <script>
     window.sr = ScrollReveal();
     sr.reveal(".header-section__main-title", {
