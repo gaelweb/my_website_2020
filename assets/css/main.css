@@ -214,12 +214,18 @@ html * {
   padding-top: 2rem;
   padding-bottom: 2rem;
 }
-.skills-section__name:nth-child(2) {
-  padding-right: 3rem;
-  padding-left: 3rem;
+.skills-section__container {
+  margin-bottom: 1.75rem;
 }
-.skills-section__name {
-  padding-bottom: 2rem;
+.skills-section__container__name {
+  font-weight: 200;
+}
+.skills-section__container__name .skill-number {
+  color: #8a8a8a;
+}
+.skills-section__container .skill-underline {
+  background-color: #75dab4;
+  height: 2px;
 }
 .skills-section__more {
   border: 1px solid #75dab4;
@@ -227,6 +233,11 @@ html * {
   padding: 0.5rem;
   margin-right: 1rem;
   margin-bottom: 1rem;
+  color: #8a8a8a;
+}
+.skills-section__more:hover {
+  background-color: #75dab4;
+  color: #fff;
 }
 
 /* PORTFOLIO */
@@ -536,6 +547,10 @@ footer span::before {
   }
   .about-section__profil .svg-about a {
     margin-left: 2rem;
+  }
+
+  .skills-section__container {
+    padding-right: 2.5rem;
   }
 }
 @media screen and (max-width: 767px) {

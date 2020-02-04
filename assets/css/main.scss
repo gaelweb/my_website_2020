@@ -248,19 +248,31 @@ html * {
     padding-top: 2rem;
     padding-bottom: 2rem;
   }
-  &__name:nth-child(2) {
-    padding-right: 3rem;
-    padding-left: 3rem;
+  &__container {
+    margin-bottom: 1.75rem;
+    &__name {
+      font-weight: $Light;
+      .skill-number {
+        color: $grey;
+      }
+    }
+    .skill-underline {
+      background-color: $green;
+      height: 2px;
+    }
   }
-  &__name {
-    padding-bottom: 2rem;
-  }
+
   &__more {
     border: 1px solid $green;
     font-weight: $Regular;
     padding: 0.5rem;
     margin-right: 1rem;
     margin-bottom: 1rem;
+    color: $grey;
+    &:hover {
+      background-color: $green;
+      color: $white;
+    }
   }
 }
 
@@ -598,6 +610,11 @@ footer {
           margin-left: 2rem;
         }
       }
+    }
+  }
+  .skills-section {
+    &__container {
+      padding-right: 2.5rem;
     }
   }
 }

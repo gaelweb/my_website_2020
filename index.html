@@ -145,29 +145,40 @@
         </div>
         <div class="row">
           <div class="col-md-6">
-            <div class="d-flex flex-column">
-              <div class="d-flex flex-row">
-                <div class="skills-section__name">
-                  <div id="skillHtml"></div>
-                </div>
-                <div class="skills-section__name">
-                  <div id="skillCss"></div>
-                </div>
-                <div class="skills-section__name">
-                  <div id="skillJs"></div>
-                </div>
+            <div class="d-flex flex-column skills-section__container">
+              <div class="d-flex justify-content-between skills-section__container__name">
+                <span>HTML5</span>
+                <span class="skill-number">90 %</span>
               </div>
-              <div class="d-flex flex-row">
-                <div class="skills-section__name">
-                  <div id="skillVuejs"></div>
-                </div>
-                <div class="skills-section__name">
-                  <div id="skillBootstrap"></div>
-                </div>
-                <div class="skills-section__name">
-                  <div id="skillPython"></div>
-                </div>
+              <div class="skill-underline" id="skillHtml" data-width="90"></div>
+            </div>
+            <div class="d-flex flex-column skills-section__container">
+              <div class="d-flex justify-content-between skills-section__container__name">
+                <span>CSS3 / SASS</span>
+                <span class="skill-number">75 %</span>
               </div>
+              <div class="skill-underline" id="skillCss" data-width="75"></div>
+            </div>
+            <div class="d-flex flex-column skills-section__container">
+              <div class="d-flex justify-content-between skills-section__container__name">
+                <span>Javascript / ES6</span>
+                <span class="skill-number">75 %</span>
+              </div>
+              <div class="skill-underline" id="skillJavascript" data-width="75"></div>
+            </div>
+            <div class="d-flex flex-column skills-section__container">
+              <div class="d-flex justify-content-between skills-section__container__name">
+                <span>Vue JS</span>
+                <span class="skill-number">75 %</span>
+              </div>
+              <div class="skill-underline" id="skillVue" data-width="75"></div>
+            </div>
+            <div class="d-flex flex-column skills-section__container">
+              <div class="d-flex justify-content-between skills-section__container__name">
+                <span>Bootstrap</span>
+                <span class="skill-number">80 %</span>
+              </div>
+              <div class="skill-underline" id="skillBoostrap" data-width="80"></div>
             </div>
           </div>
           <div class="col-md-6">
@@ -846,7 +857,6 @@
     crossorigin="anonymous"
   ></script>
   <script src="https://unpkg.com/scrollreveal"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/progressbar.js/1.1.0/progressbar.min.js"></script>
   <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
   <script src="assets/js/form.js"></script>
   <script>
@@ -879,45 +889,26 @@
       distance: "14rem",
       reset: true
     });
+    sr.reveal(".skill-underline", {
+      beforeReveal: function(domEl) {        
+        domEl.style.width = "0%";
+        domEl.style.transition = "width 1.2s";
+      },
+      afterReveal: function (domEl) {
+        domEl.style.width = domEl.dataset.width+"%";
+      },
+      reset: true
+    });
+    sr.reveal(".skills-section__more", {
+      duration: 2000,
+      distance: "14rem",
+      origin: "right",
+      reset: true
+    });
 
     /* Year creating website */
     var year = new Date().getFullYear();
     document.getElementById("year").innerHTML =
       "Copyright Gaël Monbrault" + " " + year;
-
-    /* Progressbar JS */
-    let skillsArray = [
-      { id: "#skillHtml", value: 0.9, text: "HTML5" },
-      { id: "#skillCss", value: 0.8, text: "CSS3" },
-      { id: "#skillJs", value: 0.75, text: "Javascript" },
-      { id: "#skillVuejs", value: 0.8, text: "Vue JS" },
-      { id: "#skillBootstrap", value: 0.85, text: "Bootstrap" },
-      { id: "#skillPython", value: 0.5, text: "Python" }
-    ];
-    let bars = skillsArray.map(
-      id =>
-        new ProgressBar.SemiCircle(id.id, {
-          strokeWidth: 2,
-          color: "#75DAB4",
-          trailWidth: 1,
-          valuePercent: id.value,
-          text: {
-            value: id.text,
-            alignToBottom: true,
-            style: {
-              color: "#222327",
-              position: "absolute",
-              left: "50%",
-              padding: 0,
-              margin: 0
-            }
-          }
-        })
-    );
-
-    /* Valeur % pour chaque compétence */
-    for (let i = 0; i < bars.length; i++) {
-      bars[i].animate(bars[i]._opts.valuePercent);
-    }
   </script>
 </html>
