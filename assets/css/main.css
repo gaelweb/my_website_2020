@@ -220,11 +220,10 @@ html * {
 }
 .skills-section__name {
   padding-bottom: 2rem;
-  visibility: hidden;
 }
 .skills-section__more {
-  border: 1px solid #8b2367;
-  font-weight: bold;
+  border: 1px solid #75dab4;
+  font-weight: 400;
   padding: 0.5rem;
   margin-right: 1rem;
   margin-bottom: 1rem;

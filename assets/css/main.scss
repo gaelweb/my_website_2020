@@ -254,11 +254,10 @@ html * {
   }
   &__name {
     padding-bottom: 2rem;
-    visibility: hidden;
   }
   &__more {
-    border: $borderPink;
-    font-weight: bold;
+    border: 1px solid $green;
+    font-weight: $Regular;
     padding: 0.5rem;
     margin-right: 1rem;
     margin-bottom: 1rem;

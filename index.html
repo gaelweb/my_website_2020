@@ -379,7 +379,7 @@
                 class="portfolio-section__article d-flex flex-column portfolio-reveal-right"
               >
                 <img
-                  src="assets/img/screenshot_laforet.png"
+                  src="assets/img/screenshot-website-gael-monbrault.png"
                   alt="img_portfolio"
                 />
                 <div
@@ -893,6 +893,8 @@
     );
 
     /* Valeur % pour chaque compétence */
-    bars.forEach(bar => bar.animate(bar._opts.valuePercent));
+    for (let i = 0; i < bars.length; i++) {
+      bars[i].animate(bars[i]._opts.valuePercent);
+    }
   </script>
 </html>
