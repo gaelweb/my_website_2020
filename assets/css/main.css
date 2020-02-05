@@ -502,6 +502,20 @@ footer span {
 footer span::before {
   content: "©";
 }
+footer .links-footer {
+  margin-left: 5rem;
+}
+footer .links-footer a svg {
+  fill: #fff;
+  width: 1.8rem;
+  height: 1.8rem;
+}
+footer .links-footer a:hover svg {
+  fill: #75dab4;
+}
+footer .links-footer a:nth-child(2) {
+  margin-left: 1.5rem;
+}
 
 /* RESPONSIVE */
 /* Breakpoints 
@@ -518,6 +532,11 @@ footer span::before {
   .contact-section__row {
     padding-left: 0;
     padding-right: 0;
+  }
+
+  footer .links-footer {
+    margin-top: 2rem;
+    margin-left: 0;
   }
 }
 @media screen and (min-width: 768px) {
