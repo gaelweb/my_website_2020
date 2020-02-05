@@ -793,55 +793,73 @@
   <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
   <script src="assets/js/form.js"></script>
   <script>
+    function initScrollReveal() {
     window.sr = ScrollReveal();
+
     sr.reveal(".header-section__main-title", {
-      duration: 2000,
-      scale: 2,
-      distance: "4rem"
+    duration: 2000,
+    scale: 2,
+    distance: "4rem"
+    });
+    sr.reveal(".service-section__extras__list", {
+    duration: 2000,
+    origin: "right",
+    distance: "10rem",
+    reset: true
     });
     sr.reveal(".about-section__profil__img", {
-      duration: 2500,
-      origin: "left",
-      distance: "15rem",
-      reset: true
+    duration: 2500,
+    origin: "left",
+    distance: "15rem",
+    reset: true
     });
     sr.reveal(".title_scalable", {
-      duration: 2000,
-      scale: 2,
-      reset: true
+    duration: 2000,
+    scale: 2,
+    reset: true
     });
     sr.reveal(".portfolio-reveal-left", {
-      duration: 2000,
-      origin: "left",
-      distance: "14rem",
-      reset: true
+    duration: 2000,
+    origin: "left",
+    distance: "14rem",
+    reset: true
     });
     sr.reveal(".portfolio-reveal-right", {
-      duration: 2000,
-      origin: "right",
-      distance: "14rem",
-      reset: true
+    duration: 2000,
+    origin: "right",
+    distance: "14rem",
+    reset: true
     });
     sr.reveal(".skill-underline", {
-      beforeReveal: function(domEl) {        
-        domEl.style.width = "0%";
-        domEl.style.transition = "width 1.2s";
-      },
-      afterReveal: function (domEl) {
-        domEl.style.width = domEl.dataset.width+"%";
-      },
-      reset: true
+    beforeReveal: function(domEl) {
+    domEl.style.width = "0%";
+    domEl.style.transition = "width 0.5s";
+    },
+    afterReveal: function (domEl) {
+    domEl.style.width = domEl.dataset.width+"%";
+    },
+    reset: true
     });
     sr.reveal(".skills-section__more", {
-      duration: 2000,
-      distance: "14rem",
-      origin: "right",
-      reset: true
+    duration: 2000,
+    distance: "14rem",
+    origin: "right",
+    reset: true
+    });
+    sr.reveal(".service-section__name", {
+    origin: "top",
+    distance: "4rem",
+    duration: 2000,
+    reset: true
     });
 
+    }
     /* Year creating website */
-    var year = new Date().getFullYear();
-    document.getElementById("year").innerHTML =
-      "Copyright Gaël Monbrault" + " " + year;
+    function initYearWebsite() {
+      var year = new Date().getFullYear();
+      document.getElementById("year").innerHTML = "Copyright Gaël Monbrault" + " " + year; 
+    }
+    initScrollReveal();
+    initYearWebsite();
   </script>
 </html>
