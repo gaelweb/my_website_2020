@@ -1,45 +1,63 @@
-/* Fjalla fonts */
+/* 
+  Fjalla fonts 
+*/
 @font-face {
   font-family: "Fjalla One";
-  src: url("../fonts/Road_Rage.otf") format("otf");
+  src: url("../fonts/woff2/fjalla-one-regular.woff2") format("woff2");
 }
 
-/* Poppins Fonts */
+/* 
+  Poppins Fonts 
+*/
+/* poppins-200 - latin */
 @font-face {
   font-family: "Poppins";
-  src: url("../fonts/Poppins-Black.ttf") format("ttf"),
-    url("../fonts/Poppins-Bold.ttf") format("ttf"),
-    url("../fonts/Poppins-ExtraBold.ttf") format("ttf"),
-    url("../fonts/Poppins-Italic.ttf") format("ttf"),
-    url("../fonts/Poppins-Light.ttf") format("ttf"),
-    url("../fonts/Poppins-Medium.ttf") format("ttf"),
-    url("../fonts/Poppins-Regular.ttf") format("ttf"),
-    url("../fonts/Poppins-Thin.ttf") format("ttf");
+  font-style: normal;
+  font-weight: 200;
+  src: local("Poppins ExtraLight"), local("Poppins-ExtraLight"),
+    url("../fonts/woff2/poppins-v9-latin-200.woff2") format("woff2");
+}
+/* poppins-regular - latin */
+@font-face {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  src: local("Poppins Regular"), local("Poppins-Regular"),
+    url("../fonts/woff2/poppins-v9-latin-regular.woff2") format("woff2");
+}
+/* poppins-600 - latin */
+@font-face {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 600;
+  src: local("Poppins SemiBold"), local("Poppins-SemiBold"),
+    url("../fonts/woff2/poppins-v9-latin-600.woff2") format("woff2");
+}
+/* poppins-800 - latin */
+@font-face {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 800;
+  src: local("Poppins ExtraBold"), local("Poppins-ExtraBold"),
+    url("../fonts/woff2/poppins-v9-latin-800.woff2") format("woff2");
 }
 
 /* Custom colors */
 $black: #222327;
 $white: #fff;
 $green: #75dab4;
-
-$violet: #3f005b;
-$pink: #8b2367;
 $grey: #8a8a8a;
 
 /* Custom styling */
 $border: 0.3px solid;
 $borderRadius: 3px;
-$borderPink: 1px solid $pink;
 $paddingTitle: 0.5rem;
 
 /* Font weight */
-$Thin: 100;
 $Light: 200;
 $Regular: 400;
-$Medium: 500;
 $SemiBold: 600;
 $ExtraBold: 800;
-$ExtraBlack: 900;
 
 html,
 body {
@@ -364,7 +382,7 @@ html * {
       font-weight: $Light;
     }
     :last-child {
-      font-weight: $Thin;
+      font-weight: $Light;
     }
   }
 }
@@ -531,7 +549,7 @@ html * {
       padding-left: 1rem;
     }
     div > span:nth-child(1) {
-      font-weight: $Thin;
+      font-weight: $Light;
       color: $grey;
     }
     div > span:nth-child(2) {
