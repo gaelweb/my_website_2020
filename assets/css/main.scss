@@ -445,15 +445,17 @@ html * {
 
       li {
         list-style: none;
-        font-weight: $Regular;
-        font-size: 1.2rem;
-        span {
+        .extras-description {
+          font-weight: $Regular;
+          font-size: 1.2rem;
+
+          display: inline-block;
           border-bottom: 1px solid $green;
-          width: 100%;
+          padding-bottom: 0.5em;
         }
       }
       li:nth-child(1n + 2) {
-        margin-top: 2.85rem;
+        margin-top: 2rem;
       }
     }
   }
