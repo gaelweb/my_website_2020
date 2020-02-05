@@ -55,7 +55,8 @@ html * {
 
 /* NAVBAR */
 .navbar-section {
-  background-color: transparent;
+  background-color: rgba($black, 0.85);
+  box-shadow: 2px 1px 1px $grey;
   .navbar-brand {
     color: $white;
     &:hover {
