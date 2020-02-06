@@ -512,7 +512,8 @@ html * {
   &__row {
     border-radius: $borderRadius;
     label {
-      display: none !important;
+      width: 100%;
+      margin-bottom: 0;
     }
   }
   &__form {
