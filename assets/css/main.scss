@@ -511,6 +511,9 @@ html * {
   }
   &__row {
     border-radius: $borderRadius;
+    label {
+      display: none !important;
+    }
   }
   &__form {
     .form-group {

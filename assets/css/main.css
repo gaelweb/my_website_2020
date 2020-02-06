@@ -467,6 +467,9 @@ html * {
 .contact-section__row {
   border-radius: 3px;
 }
+.contact-section__row label {
+  display: none !important;
+}
 .contact-section__form .form-group {
   padding-bottom: 1.5rem;
 }
