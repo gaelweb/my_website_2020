@@ -60,6 +60,7 @@
         <img
           src="assets/img/desktop_wallpaper.jpg"
           alt="banner_gael_monbrault"
+          loading="lazy"
         />
       </div>
 
@@ -248,7 +249,8 @@
               <div class="portfolio-section__article d-flex flex-column">
                 <img
                   src="assets/img/screenshot_laforet.png"
-                  alt="img_portfolio"
+                  alt="laforet portfolio gaël monbrault"
+                  loading="lazy"
                 />
                 <div
                   class="filter-img d-flex flex-column align-items-center justify-content-center"
@@ -299,6 +301,7 @@
                 <img
                   src="assets/img/screenshot_eldom.png"
                   alt="img_portfolio"
+                  loading="lazy"
                 />
                 <div
                   class="filter-img d-flex flex-column align-items-center justify-content-center"
@@ -352,7 +355,8 @@
               >
                 <img
                   src="assets/img/screenshot_k-actus.png"
-                  alt="img_portfolio"
+                  alt="porfolio gaël monbrault"
+                  loading="lazy"
                 />
                 <div
                   class="filter-img d-flex flex-column align-items-center justify-content-center"
@@ -404,7 +408,8 @@
               >
                 <img
                   src="assets/img/screenshot-website-gael-monbrault.png"
-                  alt="img_portfolio"
+                  alt="site web gaël monbrault"
+                  loading="lazy"
                 />
                 <div
                   class="filter-img d-flex flex-column align-items-center justify-content-center"
@@ -626,7 +631,7 @@
       </div>
       <div class="service-section__extras">
         <div class="service-section__extras__img">
-          <img src="assets/img/startup.jpg" alt="startup freelance image" />
+          <img src="assets/img/startup.jpg" alt="startup freelance image" loading="lazy"/>
         </div>
         <div class="container">
           <div class="row">
@@ -683,7 +688,7 @@
               method="post"
             >
               <div class="form-group">
-                <label>
+                <label for="inputName">Nom</label>
                   <input
                     id="inputName"
                     type="text"
@@ -692,10 +697,9 @@
                     placeholder="Nom"
                     required
                   />
-                </label>
               </div>
               <div class="form-group">
-                <label>
+                <label for="inputEmail">Email</label>
                   <input
                     id="inputEmail"
                     type="email"
@@ -704,10 +708,9 @@
                     placeholder="Email"
                     required
                   />
-                </label>
               </div>
               <div class="form-group">
-                <label>
+                <label for="inputPhone">Téléphone</label>
                   <input
                     id="inputPhone"
                     type="phone"
@@ -716,10 +719,9 @@
                     placeholder="Téléphone"
                     required
                   />
-                </label>
               </div>
               <div class="form-group">
-                <label>
+                <label for="inputSubject">Message</label>
                   <textarea
                     id="inputSubject"
                     class="form-control"
@@ -728,7 +730,6 @@
                     placeholder="Message"
                     required
                   ></textarea>
-                </label>
               </div>
               <input
                 name="submit"
