@@ -177,8 +177,7 @@ html * {
   &__main {
     height: 100%;
 
-    h1,
-    h2 {
+    h1 {
       font-family: "Poppins";
       color: $white;
       text-align: left;
@@ -188,10 +187,11 @@ html * {
       font-size: 2.5rem;
       font-weight: $ExtraBold;
     }
-
-    h2 {
-      font-size: 1.5rem;
-      font-weight: $Regular;
+    div {
+      :first-child {
+        font-size: 2rem;
+        font-weight: $SemiBold;
+      }
     }
   }
 }

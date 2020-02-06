@@ -151,8 +151,7 @@ html * {
 .header-section__main {
   height: 100%;
 }
-.header-section__main h1,
-.header-section__main h2 {
+.header-section__main h1 {
   font-family: "Poppins";
   color: #fff;
   text-align: left;
@@ -161,9 +160,9 @@ html * {
   font-size: 2.5rem;
   font-weight: 800;
 }
-.header-section__main h2 {
-  font-size: 1.5rem;
-  font-weight: 400;
+.header-section__main div :first-child {
+  font-size: 2rem;
+  font-weight: 600;
 }
 
 /* ABOUT */
