@@ -112,7 +112,7 @@ html * {
 }
 
 .nav-logo {
-  font-family: "Poppins";
+  font-family: "Fjalla One", sans-serif;
   font-weight: 600;
 }
 
@@ -611,8 +611,15 @@ footer .links-footer a:nth-child(2) {
   .navbar-section .nav-item__underline {
     display: none;
   }
+  .navbar-section .nav-item .nav-link {
+    font-size: 1.5rem;
+    font-weight: 600;
+  }
   .navbar-section .nav-item:hover .nav-link {
     color: #75dab4;
+  }
+  .navbar-section .nav-logo {
+    font-size: 1.5rem;
   }
 
   .contact-section__row div:nth-child(1) {
