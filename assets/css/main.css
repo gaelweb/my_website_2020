@@ -53,10 +53,12 @@ html * {
 }
 
 /* NAVBAR */
-.navbar-section {
+/* Navbar class js */
+.navbar-shadow {
   background-color: rgba(34, 35, 39, 0.85);
   box-shadow: 2px 1px 1px #8a8a8a;
 }
+
 .navbar-section .navbar-brand {
   color: #fff;
 }
@@ -604,6 +606,11 @@ footer .links-footer a:nth-child(2) {
   }
 }
 @media screen and (max-width: 767px) {
+  #navbar {
+    background-color: rgba(34, 35, 39, 0.85);
+    box-shadow: 2px 1px 1px #8a8a8a;
+  }
+
   .navbar-section .nav-item {
     margin-left: 0;
     margin-top: 0.5rem;

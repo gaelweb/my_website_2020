@@ -15,7 +15,7 @@
   </head>
   <body>
     <!-- Navbar -->
-    <nav class="navbar navbar-section fixed-top navbar-expand-md">
+    <nav id="navbar" class="navbar navbar-section fixed-top navbar-expand-md">
       <div class="container">
         <a class="navbar-brand nav-logo" href="#">GM</a>
         <button
@@ -774,6 +774,7 @@
     </div>
   </footer>
 
+  <script src="assets/js/main.js"></script>
   <script
     src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
     integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
@@ -854,12 +855,11 @@
     });
 
     }
-    /* Year creating website */
     function initYearWebsite() {
       var year = new Date().getFullYear();
       document.getElementById("year").innerHTML = "Copyright Gaël Monbrault" + " " + year; 
     }
     initScrollReveal();
-    initYearWebsite();
+    initYearWebsite();    
   </script>
 </html>

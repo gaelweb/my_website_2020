@@ -72,9 +72,12 @@ html * {
 }
 
 /* NAVBAR */
-.navbar-section {
+/* Navbar class js */
+.navbar-shadow {
   background-color: rgba($black, 0.85);
   box-shadow: 2px 1px 1px $grey;
+}
+.navbar-section {
   .navbar-brand {
     color: $white;
     &:hover {
@@ -674,6 +677,10 @@ footer {
 }
 
 @media screen and (max-width: 767px) {
+  #navbar {
+    background-color: rgba($black, 0.85);
+    box-shadow: 2px 1px 1px $grey;
+  }
   .navbar-section {
     .nav-item {
       margin-left: 0;
