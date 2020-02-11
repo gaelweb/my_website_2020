@@ -34,11 +34,7 @@
       src="https://cdnjs.cloudflare.com/ajax/libs/scrollReveal.js/4.0.5/scrollreveal.min.js"
       async
     ></script>
-    <script
-      src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
-      integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
-      crossorigin="anonymous"
-    ></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="assets/js/main.js"></script>
     <script
       src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
@@ -878,11 +874,7 @@
         </div>
         <div class="row contact-section__row">
           <div class="col-md-6">
-            <form
-              class="contact-section__form contact__form"
-              action="/mail/mail.php"
-              method="post"
-            >
+            <form class="contact-section__form contact__form" method="post">
               <div class="form-group row">
                 <label
                   for="inputName"
@@ -931,7 +923,6 @@
                     class="form-control"
                     placeholder="Votre numéro de téléphone"
                     pattern="^(?:0|\(?\+33\)?\s?|0033\s?)[1-79](?:[\.\-\s]?\d\d){4}$"
-                    required
                   />
                 </div>
               </div>
@@ -946,7 +937,7 @@
                     id="inputSubject"
                     class="form-control"
                     rows="3"
-                    name="subject"
+                    name="message"
                     placeholder="Votre message ..."
                     required
                   ></textarea>
@@ -965,9 +956,7 @@
                     class="alert alert-success contact__msg"
                     style="display: none"
                     role="alert"
-                  >
-                    Your message was sent successfully.
-                  </div>
+                  ></div>
                 </div>
               </div>
             </form>
