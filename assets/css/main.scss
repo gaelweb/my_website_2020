@@ -1,63 +1,6 @@
-/* 
-  Fjalla fonts 
-*/
-@font-face {
-  font-family: "Fjalla One";
-  src: url("../fonts/woff2/fjalla-one-regular.woff2") format("woff2");
-}
-
-/* 
-  Poppins Fonts 
-*/
-/* poppins-200 - latin */
-@font-face {
-  font-family: "Poppins";
-  font-style: normal;
-  font-weight: 200;
-  src: local("Poppins ExtraLight"), local("Poppins-ExtraLight"),
-    url("../fonts/woff2/poppins-v9-latin-200.woff2") format("woff2");
-}
-/* poppins-regular - latin */
-@font-face {
-  font-family: "Poppins";
-  font-style: normal;
-  font-weight: 400;
-  src: local("Poppins Regular"), local("Poppins-Regular"),
-    url("../fonts/woff2/poppins-v9-latin-regular.woff2") format("woff2");
-}
-/* poppins-600 - latin */
-@font-face {
-  font-family: "Poppins";
-  font-style: normal;
-  font-weight: 600;
-  src: local("Poppins SemiBold"), local("Poppins-SemiBold"),
-    url("../fonts/woff2/poppins-v9-latin-600.woff2") format("woff2");
-}
-/* poppins-800 - latin */
-@font-face {
-  font-family: "Poppins";
-  font-style: normal;
-  font-weight: 800;
-  src: local("Poppins ExtraBold"), local("Poppins-ExtraBold"),
-    url("../fonts/woff2/poppins-v9-latin-800.woff2") format("woff2");
-}
-
-/* Custom colors */
-$black: #222327;
-$white: #fff;
-$green: #75dab4;
-$grey: #8a8a8a;
-
-/* Custom styling */
-$border: 0.3px solid;
-$borderRadius: 3px;
-$paddingTitle: 0.5rem;
-
-/* Font weight */
-$Light: 200;
-$Regular: 400;
-$SemiBold: 600;
-$ExtraBold: 800;
+/***  IMPORTS ***/
+@import "_typography.scss";
+@import "_variables.scss";
 
 html,
 body {
@@ -68,7 +11,7 @@ body {
 }
 
 html * {
-  font-family: "Poppins", sans-serif;
+  font-family: $f-pop;
 }
 
 /* NAVBAR */
@@ -139,7 +82,7 @@ html * {
   }
 }
 .nav-logo {
-  font-family: "Fjalla One", sans-serif;
+  font-family: $f-fja;
   font-weight: $SemiBold;
 }
 
@@ -180,7 +123,7 @@ html * {
     height: 100%;
 
     h1 {
-      font-family: "Poppins";
+      font-family: $f-pop;
       color: $white;
       text-align: left;
     }
@@ -318,7 +261,7 @@ html * {
 
     h2 {
       color: $white;
-      font-family: "Fjalla one", sans-serif;
+      font-family: $f-fja;
       font-size: 2.5rem;
       padding-top: $paddingTitle;
       padding-bottom: $paddingTitle;
@@ -396,7 +339,7 @@ html * {
     padding-bottom: 5rem;
 
     h2 {
-      font-family: "Fjalla one", sans-serif;
+      font-family: $f-fja;
       font-size: 2.5rem;
       color: $black;
     }
@@ -502,7 +445,7 @@ html * {
 
     h2 {
       color: $white;
-      font-family: "Fjalla one", sans-serif;
+      font-family: $f-fja;
       font-size: 2.5rem;
     }
   }

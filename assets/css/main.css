@@ -1,45 +1,31 @@
 @charset "UTF-8";
-/* 
-  Fjalla fonts 
-*/
+/***  IMPORTS ***/
 @font-face {
-  font-family: "Fjalla One";
-  src: url("../fonts/woff2/fjalla-one-regular.woff2") format("woff2");
-}
-/* 
-  Poppins Fonts 
-*/
-/* poppins-200 - latin */
-@font-face {
-  font-family: "Poppins";
-  font-style: normal;
-  font-weight: 200;
-  src: local("Poppins ExtraLight"), local("Poppins-ExtraLight"), url("../fonts/woff2/poppins-v9-latin-200.woff2") format("woff2");
-}
-/* poppins-regular - latin */
-@font-face {
-  font-family: "Poppins";
-  font-style: normal;
+  font-family: "Fjalla-One";
   font-weight: 400;
-  src: local("Poppins Regular"), local("Poppins-Regular"), url("../fonts/woff2/poppins-v9-latin-regular.woff2") format("woff2");
+  src: url("fonts/woff2/fjalla-one-regular.woff2") format("woff2");
 }
-/* poppins-600 - latin */
 @font-face {
   font-family: "Poppins";
-  font-style: normal;
+  font-weight: 200;
+  src: url("fonts/woff2/poppins-v9-latin-200.woff2") format("woff2");
+}
+@font-face {
+  font-family: "Poppins";
+  font-weight: 400;
+  src: url("fonts/woff2/poppins-v9-latin-400.woff2") format("woff2");
+}
+@font-face {
+  font-family: "Poppins";
   font-weight: 600;
-  src: local("Poppins SemiBold"), local("Poppins-SemiBold"), url("../fonts/woff2/poppins-v9-latin-600.woff2") format("woff2");
+  src: url("fonts/woff2/poppins-v9-latin-600.woff2") format("woff2");
 }
-/* poppins-800 - latin */
 @font-face {
   font-family: "Poppins";
-  font-style: normal;
   font-weight: 800;
-  src: local("Poppins ExtraBold"), local("Poppins-ExtraBold"), url("../fonts/woff2/poppins-v9-latin-800.woff2") format("woff2");
+  src: url("fonts/woff2/poppins-v9-latin-800.woff2") format("woff2");
 }
-/* Custom colors */
-/* Custom styling */
-/* Font weight */
+/* FONT WEIGHT */
 html,
 body {
   overflow-x: hidden;
@@ -114,7 +100,7 @@ html * {
 }
 
 .nav-logo {
-  font-family: "Fjalla One", sans-serif;
+  font-family: "Fjalla one", sans-serif;
   font-weight: 600;
 }
 
@@ -153,7 +139,7 @@ html * {
   height: 100%;
 }
 .header-section__main h1 {
-  font-family: "Poppins";
+  font-family: "Poppins", sans-serif;
   color: #fff;
   text-align: left;
 }

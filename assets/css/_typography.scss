@@ -1,0 +1,13 @@
+@import "_mixins.scss";
+
+@include font-face(
+  Fjalla-One,
+  fonts/woff2/fjalla-one-regular,
+  400,
+  null,
+  woff2
+);
+@include font-face(Poppins, fonts/woff2/poppins-v9-latin-200, 200, null, woff2);
+@include font-face(Poppins, fonts/woff2/poppins-v9-latin-400, 400, null, woff2);
+@include font-face(Poppins, fonts/woff2/poppins-v9-latin-600, 600, null, woff2);
+@include font-face(Poppins, fonts/woff2/poppins-v9-latin-800, 800, null, woff2);
