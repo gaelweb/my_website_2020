@@ -1,5 +1,5 @@
 <?php 
-    if((isset($_POST['name']))&&(isset($_POST['email'])&&$_POST['message']!="")){ 
+    if((isset($_POST['name']))&&(isset($_POST['email'])&&$_POST['message']&&$_POST['phone']!="")){ 
         $to = 'gael.pro.dev@gmail.com';
         $subject = 'Demande';
         $email = $_POST['email'];
@@ -10,7 +10,8 @@
                     </head>
                     <body>
                         <p><b>Name:</b> '.$_POST['name'].'</p>
-                        <p><b>message:</b> '.$_POST['message'].'</p>                        
+                        <p><b>Tél:</b> '.$_POST['phone']. '</p>
+                        <p><b>message:</b> '.$_POST['message'].'</p>                       
                     </body>
                 </html>'; 
         $headers  = "Content-type: text/html; charset=utf-8 \r\n"; 
