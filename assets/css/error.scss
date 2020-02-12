@@ -1,0 +1,34 @@
+@import "_typography.scss";
+@import "_variables.scss";
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: $f-pop;
+}
+.content-error {
+  width: 100%;
+  height: 100vh;
+  background-color: $black;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+  h1 {
+    color: $green;
+    font-size: 4rem;
+    font-weight: $ExtraBold;
+    text-align: center;
+  }
+  .link-back {
+    color: $white;
+    text-decoration: none;
+    border: 1px solid $green;
+    padding: 15px 20px 15px 20px;
+    text-align: center;
+    &:hover {
+      background-color: $green;
+      cursor: pointer;
+    }
+  }
+}
