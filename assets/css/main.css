@@ -454,6 +454,10 @@ html * {
 .contact-section__form .form-group {
   padding-bottom: 1.5rem;
 }
+.contact-section__form .form-group label::after {
+  content: "∗";
+  color: #75dab4;
+}
 .contact-section__form input,
 .contact-section__form textarea {
   border: 0;

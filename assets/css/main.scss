@@ -455,6 +455,10 @@ html * {
   &__form {
     .form-group {
       padding-bottom: 1.5rem;
+      label::after {
+        content: "\2217";
+        color: $green;
+      }
     }
     input,
     textarea {
